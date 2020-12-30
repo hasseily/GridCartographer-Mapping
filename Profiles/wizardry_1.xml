@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="WIZARDRY: PROVING GROUNDS OF THE MAD OVERLORD"
+		short="WIZARDRY"
+		titlelo="Wizardry: Proving Grounds of the Mad Overlord"
+		beta="false"
+		rev="1"
+	/>
+
+    <author><![CDATA[Grid Cartographer / rikkles]]></author>
+
+	<dsub>
+
+		<!-- WIZ1 Apple 2 .dsk -->
+		<detect sys="40a3f909" prg="421e13fd" ph3="0" ph2="0" ph1="0d968558" ph0="3c">
+			<peek bytes="759a 7598 7594 7596" />
+		</detect>
+
+	</dsub>
+
+	<regions>
+
+		<region id="1" name="Maze" ground_floor="false" start_floor="B1" auto_create="true" >
+			<grid width="20" height="20" />
+		</region>
+
+	</regions>
+
+	<views>
+
+		<!-- Maze -->
+		<packetview region="1">
+ 			<xpos offset="0" length="1" min="0" max="14" />
+			<ypos offset="1" length="1" min="0" max="14" />
+			<face offset="2" length="1" n="0" e="1" s="2" w="3" />
+ 			<floor offset="3" length="1" min="1" max="a" dir="down" />
+		</packetview>
+
+	</views>
+
+</gamelink>

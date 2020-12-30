@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="ULTIMA V: WARRIORS OF DESTINY"
+		short="ULTIMA V"
+		titlelo="Ultima V: Warriors of Destiny"
+		beta="false"
+		rev="1"
+	/>
+
+    <author><![CDATA[glaymore / rikkles]]></author>
+
+	<dsub>
+
+		<!-- APPLE 2: ultima v .dsk program disk -->
+		<detect sys="40a3f909" prg="a7b6001b" ph3="359a9e47" ph2="0" ph1="0" ph0="0">
+			<!-- 0:xpos 1:ypos 2:location 3:floor 4:face 5:xpos_dungeon 6:ypos_dungeon -->
+			<peek bytes="0000 0001 000a 0009 000f 01f9 01f8" />
+		</detect>
+
+	</dsub>
+
+	<regions>
+
+		<region id="1" name="Britannia" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="16" tiley="16" origin_tl="true" />
+		</region>
+
+		<region id="2" name="Moonglow" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="3" name="Britain" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="4" name="Jhelom" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="5" name="Yew" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="6" name="Minoc" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="7" name="Trinsic" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="8" name="Skara Brae" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="9" name="New Magincia" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="10" name="Fogsbane" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="11" name="Stormcrow" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="12" name="Greyhaven" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="13" name="Waveguide" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="14" name="Iolo's Hut" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="15" name="Sutek's Hut" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="16" name="Sin'Vraal's Hut" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="17" name="Grendel's Hut" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="18" name="Lord British's Castle" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="19" name="Palace of Blackthorn" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="20" name="West Britanny" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="21" name="North Britanny" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="22" name="East Britanny" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="23" name="Paws" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="24" name="Cove" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="25" name="Buccaneer's Den" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="26" name="Ararat" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="27" name="Bordermarch" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="28" name="Farthing" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="29" name="Windemere" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="30" name="Stonegate" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="31" name="Lycaeum" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="32" name="Empath Abbey" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="33" name="Serpent's Hold" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="32" height="32" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="34" name="Underworld" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="16" tiley="16" origin_tl="true" />
+		</region>
+
+		<region id="35" name="Deceit" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="36" name="Despise" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="37" name="Destard" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="38" name="Wrong" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="39" name="Covetous" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="40" name="Shame" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="41" name="Hythloth" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+		<region id="42" name="Doom" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="8" height="8" tilex="1" tiley="1" origin_tl="true" />
+		</region>
+
+	</regions>
+
+	<views>
+
+		<!-- Britannia -->
+		<packetview region="1">
+			<check offset="2" length="1" value="00" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+		</packetview>
+
+		<!-- Moonglow -->
+		<packetview region="2">
+			<check offset="2" length="1" value="01" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Britain -->
+		<packetview region="3">
+			<check offset="2" length="1" value="02" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Jhelom -->
+		<packetview region="4">
+			<check offset="2" length="1" value="03" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Yew ground floor -->
+		<packetview region="5">
+			<check offset="2" length="1" value="04" />
+			<check offset="3" length="1" value="00" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" />
+		</packetview>
+
+		<!-- Yew basement -->
+		<packetview region="5">
+			<check offset="2" length="1" value="04" />
+			<check offset="3" length="1" value="ff" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="254"/>
+		</packetview>
+
+		<!-- Minoc -->
+		<packetview region="6">
+			<check offset="2" length="1" value="05" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Trinsic -->
+		<packetview region="7">
+			<check offset="2" length="1" value="06" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Skara Brae -->
+		<packetview region="8">
+			<check offset="2" length="1" value="07" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- New Magincia -->
+		<packetview region="9">
+			<check offset="2" length="1" value="08" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Fogsbane -->
+		<packetview region="10">
+			<check offset="2" length="1" value="09" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Stormcrow -->
+		<packetview region="11">
+			<check offset="2" length="1" value="0a" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Greyhaven -->
+		<packetview region="12">
+			<check offset="2" length="1" value="0b" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Waveguide -->
+		<packetview region="13">
+			<check offset="2" length="1" value="0c" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Iolo's Hut -->
+		<packetview region="14">
+			<check offset="2" length="1" value="0d" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Sutek's Hut -->
+		<packetview region="15">
+			<check offset="2" length="1" value="0e" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Sin'Vraal's Hut -->
+		<packetview region="16">
+			<check offset="2" length="1" value="0f" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Grendel's Hut -->
+		<packetview region="17">
+			<check offset="2" length="1" value="10" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Lord British's Castle -->
+		<packetview region="18">
+			<check offset="2" length="1" value="11" />
+			<check offset="3" length="1" value="ff" op="ne" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Lord British's Castle basement -->
+		<packetview region="18">
+			<check offset="2" length="1" value="11" />
+			<check offset="3" length="1" value="ff" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="254"/>
+		</packetview>
+
+		<!-- Palace of Blackthorn -->
+		<packetview region="19">
+			<check offset="2" length="1" value="12" />
+			<check offset="3" length="1" value="ff" op="ne" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Palace of Blackthorn basement -->
+		<packetview region="19">
+			<check offset="2" length="1" value="12" />
+			<check offset="3" length="1" value="ff" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="254"/>
+		</packetview>
+
+		<!-- West Britanny -->
+		<packetview region="20">
+			<check offset="2" length="1" value="13" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- North Britanny -->
+		<packetview region="21">
+			<check offset="2" length="1" value="14" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- East Britanny -->
+		<packetview region="22">
+			<check offset="2" length="1" value="15" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Paws -->
+		<packetview region="23">
+			<check offset="2" length="1" value="16" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Cove -->
+		<packetview region="24">
+			<check offset="2" length="1" value="17" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Buccaneer's Den -->
+		<packetview region="25">
+			<check offset="2" length="1" value="18" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Ararat -->
+		<packetview region="26">
+			<check offset="2" length="1" value="19" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Bordermarch -->
+		<packetview region="27">
+			<check offset="2" length="1" value="1a" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Farthing -->
+		<packetview region="28">
+			<check offset="2" length="1" value="1b" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Windemere -->
+		<packetview region="29">
+			<check offset="2" length="1" value="1c" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Stonegate -->
+		<packetview region="30">
+			<check offset="2" length="1" value="1d" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Lycaeum -->
+		<packetview region="31">
+			<check offset="2" length="1" value="1e" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Empath Abbey -->
+		<packetview region="32">
+			<check offset="2" length="1" value="1f" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Serpent's Hold -->
+		<packetview region="33">
+			<check offset="2" length="1" value="20" />
+			<check offset="3" length="1" value="ff" op="ne" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="up" />
+		</packetview>
+
+		<!-- Serpent's Hold basement -->
+		<packetview region="33">
+			<check offset="2" length="1" value="20" />
+			<check offset="3" length="1" value="ff" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="254"/>
+		</packetview>
+
+		<!-- Underworld -->
+		<packetview region="34">
+			<check offset="2" length="1" value="ff" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+		</packetview>
+
+		<!-- Deceit -->
+		<packetview region="35">
+			<check offset="2" length="1" value="21" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Despise -->
+		<packetview region="36">
+			<check offset="2" length="1" value="22" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Destard -->
+		<packetview region="37">
+			<check offset="2" length="1" value="23" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Wrong -->
+		<packetview region="38">
+			<check offset="2" length="1" value="24" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Covetous -->
+		<packetview region="39">
+			<check offset="2" length="1" value="25" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Shame -->
+		<packetview region="40">
+			<check offset="2" length="1" value="26" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Hythloth -->
+		<packetview region="41">
+			<check offset="2" length="1" value="27" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+		<!-- Doom -->
+		<packetview region="42">
+			<check offset="2" length="1" value="28" />
+			<xpos offset="5" length="1" min="0" max="07" />
+			<ypos offset="6" length="1" min="0" max="07" />
+			<face offset="4" length="1" w="3" n="0" e="1" s="2" />
+ 			<floor offset="3" length="1" min="00" max="ff" dir="down" adjust="-1" />
+		</packetview>
+
+
+	</views>
+
+</gamelink>
