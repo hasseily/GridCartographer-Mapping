@@ -6,7 +6,7 @@
 		short="NOX ARCHAIST"
 		titlelo="Nox Archaist"
 		beta="false"
-		rev="1141"
+		rev="1190"
 	/>
 
 	<author><![CDATA[Rikkles]]></author>
@@ -16,7 +16,8 @@
 		<!-- AppleWin running Nox Archaist HDV -->
 		<detect system="APPLE II" sys="40a3f909" prg="58c37f8c" ph3="58c37f8c" ph2="0" ph1="0" ph0="0">
 			<!-- 0:mapID 1:region 2:maptype 3:xpos 4:ypos -->
-			<peek bytes="2af9 0000 267d 6cf6 6cf7" />
+			<!-- <peek bytes="2af9 0000 267d 6cf6 6cf7" /> Game Version 1.1.4 -->
+			<peek bytes="2af9 0000 267d 6cec 6ced" />
 		</detect>
 
 	</dsub>
