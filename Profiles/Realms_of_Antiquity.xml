@@ -110,23 +110,23 @@
   <views>
     <class name="World_0">
       <check offset="0" length="1" value="0" />
-      <xpos offset="3" length="1" min="0" max="ff" />
-      <ypos offset="2" length="1" min="0" max="ff" />
+      <xpos offset="2" length="1" min="0" max="ff" />
+      <ypos offset="3" length="1" min="0" max="ff" />
     </class>
     <class name="World_1">
       <check offset="0" length="1" value="1" />
-      <xpos offset="3" length="1" min="0" max="ff" />
-      <ypos offset="2" length="1" min="0" max="ff" />
+      <xpos offset="2" length="1" min="0" max="ff" />
+      <ypos offset="3" length="1" min="0" max="ff" />
     </class>
     <class name="World_2">
       <check offset="0" length="1" value="2" />
-      <xpos offset="3" length="1" min="0" max="ff" />
-      <ypos offset="2" length="1" min="0" max="ff" />
+      <xpos offset="2" length="1" min="0" max="ff" />
+      <ypos offset="3" length="1" min="0" max="ff" />
     </class>
     <class name="World_3">
       <check offset="0" length="1" value="3" />
-      <xpos offset="3" length="1" min="0" max="ff" />
-      <ypos offset="2" length="1" min="0" max="ff" />
+      <xpos offset="2" length="1" min="0" max="ff" />
+      <ypos offset="3" length="1" min="0" max="ff" />
     </class>
 
     <!-- WORLD_0 -->
@@ -142,37 +142,37 @@
     </packetview>
     <!-- Alpthorpe -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="10" />
+      <check offset="1" length="1" value="a" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Mayor House -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="21" />
+      <check offset="1" length="1" value="15" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Hermit's Hut -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="22" />
+      <check offset="1" length="1" value="16" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Outpost Ruins -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="23" />
+      <check offset="1" length="1" value="17" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Faeling Lair -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="48" />
+      <check offset="1" length="1" value="30" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- River Cavern -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="49" />
+      <check offset="1" length="1" value="31" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- North Pass -->
     <packetview extends="World_0" region="255">
-      <check offset="1" length="1" value="50" />
+      <check offset="1" length="1" value="32" />
       <const_floor>F8</const_floor>
     </packetview>
     
@@ -183,57 +183,57 @@
     </packetview>
     <!-- Port Bonifice -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="11" />
+      <check offset="1" length="1" value="b" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Temple of Light -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="24" />
+      <check offset="1" length="1" value="18" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Prince's Home -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="25" />
+      <check offset="1" length="1" value="19" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Prince's Basement -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="26" />
+      <check offset="1" length="1" value="1a" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Thieves Guild -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="27" />
+      <check offset="1" length="1" value="1b" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Iron Mines -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="51" />
+      <check offset="1" length="1" value="33" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Iron Mines (Dry) -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="52" />
+      <check offset="1" length="1" value="34" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Iron Mines (Flooded) -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="53" />
+      <check offset="1" length="1" value="35" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Flood switch (off) -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="54" />
+      <check offset="1" length="1" value="36" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Flood switch (on) -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="55" />
+      <check offset="1" length="1" value="37" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Grootslang's Lair -->
     <packetview extends="World_0" region="1">
-      <check offset="1" length="1" value="56" />
+      <check offset="1" length="1" value="38" />
       <const_floor>F11</const_floor>
     </packetview>
     
@@ -244,52 +244,52 @@
     </packetview>
     <!-- Weymoor -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="12" />
+      <check offset="1" length="1" value="c" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Ruined Priory -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="28" />
+      <check offset="1" length="1" value="1c" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Amber Tower (Level 1) -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="29" />
+      <check offset="1" length="1" value="1d" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Amber Tower (Level 2) -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="30" />
+      <check offset="1" length="1" value="1e" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Amber Tower (Level 3) -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="31" />
+      <check offset="1" length="1" value="1f" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Amber Tower (Level 4) -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="32" />
+      <check offset="1" length="1" value="20" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Fort Granros -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="33" />
+      <check offset="1" length="1" value="21" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Catacombs -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="57" />
+      <check offset="1" length="1" value="39" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Wizards Lair -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="58" />
+      <check offset="1" length="1" value="3a" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Wizards Lair (Pit) -->
     <packetview extends="World_0" region="2">
-      <check offset="1" length="1" value="59" />
+      <check offset="1" length="1" value="3b" />
       <const_floor>F10</const_floor>
     </packetview>
     
@@ -300,42 +300,42 @@
     </packetview>
     <!-- Bleyloch -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="14" />
+      <check offset="1" length="1" value="e" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Graveyard -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="15" />
+      <check offset="1" length="1" value="f" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Sheriff's Home -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="35" />
+      <check offset="1" length="1" value="23" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Isolated Hut -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="36" />
+      <check offset="1" length="1" value="24" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Crypt 1 -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="65" />
+      <check offset="1" length="1" value="41" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Crypt 2 -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="66" />
+      <check offset="1" length="1" value="42" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Lich Crypt -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="67" />
+      <check offset="1" length="1" value="43" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Smuggler's Cave -->
     <packetview extends="World_0" region="3">
-      <check offset="1" length="1" value="68" />
+      <check offset="1" length="1" value="44" />
       <const_floor>F8</const_floor>
     </packetview>
     
@@ -346,37 +346,37 @@
     </packetview>
     <!-- Cragburn -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="13" />
+      <check offset="1" length="1" value="d" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Dark Eagle Inn -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="34" />
+      <check offset="1" length="1" value="22" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Pass Cave West -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="60" />
+      <check offset="1" length="1" value="3c" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Pass Cave West -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="61" />
+      <check offset="1" length="1" value="3d" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Black Pit (Level 1) -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="62" />
+      <check offset="1" length="1" value="3e" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Black Pit (Level 2) -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="63" />
+      <check offset="1" length="1" value="3f" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Black Pit (Level 3) -->
     <packetview extends="World_0" region="4">
-      <check offset="1" length="1" value="64" />
+      <check offset="1" length="1" value="40" />
       <const_floor>F7</const_floor>
     </packetview>
     
@@ -392,42 +392,42 @@
     </packetview>
     <!-- Mondular (cursed) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="16" />
+      <check offset="1" length="1" value="10" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Mondular (restored) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="17" />
+      <check offset="1" length="1" value="11" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Tower of Loom (Level 1) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="37" />
+      <check offset="1" length="1" value="25" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Tower of Loom (Level 2) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="38" />
+      <check offset="1" length="1" value="26" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Tower of Loom (Level 3) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="39" />
+      <check offset="1" length="1" value="27" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Tower of Loom (Level 4) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="40" />
+      <check offset="1" length="1" value="28" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Dungeon of Dread (Level 1) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="69" />
+      <check offset="1" length="1" value="45" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Dungeon of Dread (Level 2) -->
     <packetview extends="World_0" region="5">
-      <check offset="1" length="1" value="70" />
+      <check offset="1" length="1" value="46" />
       <const_floor>F9</const_floor>
     </packetview>
     
@@ -438,77 +438,77 @@
     </packetview>
     <!-- Eburness -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="18" />
+      <check offset="1" length="1" value="12" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Usalari -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="19" />
+      <check offset="1" length="1" value="13" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Pirate Camp -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="20" />
+      <check offset="1" length="1" value="14" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Crimson Tower (Level 1) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="41" />
+      <check offset="1" length="1" value="29" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Crimson Tower (Level 2) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="42" />
+      <check offset="1" length="1" value="2a" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Crimson Tower (Level 3) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="43" />
+      <check offset="1" length="1" value="2b" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Crimson Tower (Level 4) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="44" />
+      <check offset="1" length="1" value="2c" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Pirate Ship -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="45" />
+      <check offset="1" length="1" value="2d" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Fort Kinney -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="46" />
+      <check offset="1" length="1" value="2e" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Pirate Hut -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="47" />
+      <check offset="1" length="1" value="2f" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Volcano Cavern -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="71" />
+      <check offset="1" length="1" value="47" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- Volcano Caldera (high) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="72" />
+      <check offset="1" length="1" value="48" />
       <const_floor>F12</const_floor>
     </packetview>
     <!-- Volcano Caldera (low) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="73" />
+      <check offset="1" length="1" value="49" />
       <const_floor>F13</const_floor>
     </packetview>
     <!-- Obsidian Dungeon (Level 1) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="74" />
+      <check offset="1" length="1" value="4a" />
       <const_floor>F14</const_floor>
     </packetview>
     <!-- Obsidian Dungeon (Level 2) -->
     <packetview extends="World_0" region="6">
-      <check offset="1" length="1" value="75" />
+      <check offset="1" length="1" value="4b" />
       <const_floor>F15</const_floor>
     </packetview>
 
@@ -528,62 +528,62 @@
     </packetview>
     <!-- Ashford -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="10" />
+      <check offset="1" length="1" value="a" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Castle Drunach (Level 1) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="16" />
+      <check offset="1" length="1" value="10" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Castle Drunach (Level 2) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="17" />
+      <check offset="1" length="1" value="11" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Verdant Tower (Level 1) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="18" />
+      <check offset="1" length="1" value="12" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Verdant Tower (Level 2) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="19" />
+      <check offset="1" length="1" value="13" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Verdant Tower (Level 3) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="20" />
+      <check offset="1" length="1" value="14" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Verdant Tower (Level 4) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="21" />
+      <check offset="1" length="1" value="15" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Faecaisteal (Level 1) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="23" />
+      <check offset="1" length="1" value="17" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Faecaisteal (Level 2) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="24" />
+      <check offset="1" length="1" value="18" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Faecaisteal (Queen) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="25" />
+      <check offset="1" length="1" value="19" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- The Mound -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="43" />
+      <check offset="1" length="1" value="2b" />
       <const_floor>F12</const_floor>
     </packetview>
     <!-- The Mound (Faery) -->
     <packetview extends="World_1" region="10">
-      <check offset="1" length="1" value="44" />
+      <check offset="1" length="1" value="2c" />
       <const_floor>F13</const_floor>
     </packetview>
     
@@ -594,42 +594,42 @@
     </packetview>
     <!-- Skalburg -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="11" />
+      <check offset="1" length="1" value="b" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Valwick -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="12" />
+      <check offset="1" length="1" value="c" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Jarl's Hall -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="26" />
+      <check offset="1" length="1" value="1a" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Fort Edon -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="27" />
+      <check offset="1" length="1" value="1b" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Troll Cave 1 -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="45" />
+      <check offset="1" length="1" value="2d" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Troll Cave 2 -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="46" />
+      <check offset="1" length="1" value="2e" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Troll Cave 3 -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="47" />
+      <check offset="1" length="1" value="2f" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Jotunheim Cave -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="48" />
+      <check offset="1" length="1" value="30" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Jotunheim -->
@@ -639,17 +639,17 @@
     </packetview>
     <!-- Spider Cave -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="49" />
+      <check offset="1" length="1" value="31" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Jotnar Castle -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="28" />
+      <check offset="1" length="1" value="1c" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- Treasure Vault -->
     <packetview extends="World_1" region="11">
-      <check offset="1" length="1" value="29" />
+      <check offset="1" length="1" value="1d" />
       <const_floor>F12</const_floor>
     </packetview>
     
@@ -660,37 +660,37 @@
     </packetview>
     <!-- Regnhurst -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="13" />
+      <check offset="1" length="1" value="d" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Wyrm Lair -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="50" />
+      <check offset="1" length="1" value="32" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Hero Crypt -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="51" />
+      <check offset="1" length="1" value="33" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Cobalt Tower (Level 1) -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="30" />
+      <check offset="1" length="1" value="1e" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Cobalt Tower (Level 2) -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="31" />
+      <check offset="1" length="1" value="1f" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Cobalt Tower (Level 3) -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="32" />
+      <check offset="1" length="1" value="20" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Cobalt Tower (Level 4) -->
     <packetview extends="World_1" region="12">
-      <check offset="1" length="1" value="33" />
+      <check offset="1" length="1" value="21" />
       <const_floor>F7</const_floor>
     </packetview>
 
@@ -702,37 +702,37 @@
     </packetview>
     <!-- Hermit's Hut -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="22" />
+      <check offset="1" length="1" value="16" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Monastery -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="34" />
+      <check offset="1" length="1" value="22" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Monastery (Upper Level) -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="35" />
+      <check offset="1" length="1" value="23" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Monastery Basement -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="52" />
+      <check offset="1" length="1" value="34" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Thieves Sanctuary (Outer) -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="53" />
+      <check offset="1" length="1" value="35" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Thieves Sanctuary (Inner) -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="54" />
+      <check offset="1" length="1" value="36" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Thieves Sanctuary (Maze) -->
     <packetview extends="World_1" region="13">
-      <check offset="1" length="1" value="55" />
+      <check offset="1" length="1" value="37" />
       <const_floor>F7</const_floor>
     </packetview>
 
@@ -743,72 +743,72 @@
     </packetview>
     <!-- Rimefell -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="14" />
+      <check offset="1" length="1" value="e" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Skye Abbey -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="36" />
+      <check offset="1" length="1" value="24" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Azure Tower (Level 1) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="37" />
+      <check offset="1" length="1" value="25" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Azure Tower (Level 2) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="38" />
+      <check offset="1" length="1" value="26" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Azure Tower (Level 3) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="39" />
+      <check offset="1" length="1" value="27" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Azure Tower (Level 4) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="40" />
+      <check offset="1" length="1" value="28" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Whispering Ruins -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="15" />
+      <check offset="1" length="1" value="f" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Whispering Ruins (Level 1) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="56" />
+      <check offset="1" length="1" value="38" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Whispering Ruins (Level 2) -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="57" />
+      <check offset="1" length="1" value="39" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Glacier Wastes -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="08" />
+      <check offset="1" length="1" value="8" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Glacial Caverns 1 -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="58" />
+      <check offset="1" length="1" value="3a" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- Glacial Caverns 2 -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="59" />
+      <check offset="1" length="1" value="3b" />
       <const_floor>F12</const_floor>
     </packetview>
     <!-- Abandoned Camp -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="41" />
+      <check offset="1" length="1" value="29" />
       <const_floor>F13</const_floor>
     </packetview>
     <!-- Lost Ruins -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="42" />
+      <check offset="1" length="1" value="2a" />
       <const_floor>F14</const_floor>
     </packetview>
     <!-- Lost Crater -->
@@ -818,7 +818,7 @@
     </packetview>
     <!-- Crystal Caves -->
     <packetview extends="World_1" region="14">
-      <check offset="1" length="1" value="60" />
+      <check offset="1" length="1" value="3c" />
       <const_floor>F16</const_floor>
     </packetview>
 
@@ -833,23 +833,23 @@
     </packetview>
     <!-- Pristine Tower (Bottom) -->
     <packetview extends="World_2" region="20">
-      <check offset="1" length="1" value="20" />
+      <check offset="1" length="1" value="14" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Pristine Tower (Top) -->
     <packetview extends="World_2" region="20">
-      <check offset="1" length="1" value="21" />
+      <check offset="1" length="1" value="15" />
       <const_floor>F2</const_floor>
     </packetview>
 
     <!-- Remzak's Maze -->
     <packetview extends="World_2" region="21">
-      <check offset="1" length="1" value="40" />
+      <check offset="1" length="1" value="28" />
       <const_floor>G</const_floor>
     </packetview>
     <!-- Hall of Portals -->
     <packetview extends="World_2" region="21">
-      <check offset="1" length="1" value="19" />
+      <check offset="1" length="1" value="13" />
       <const_floor>F1</const_floor>
     </packetview>
     
@@ -867,32 +867,32 @@
     </packetview>
     <!-- Fort Aubrey -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="24" />
+      <check offset="1" length="1" value="18" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Voivode's Hall -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="22" />
+      <check offset="1" length="1" value="16" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Voivode's Hall (Upper Floor) -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="23" />
+      <check offset="1" length="1" value="17" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Voivode's Hall (Basement) -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="41" />
+      <check offset="1" length="1" value="29" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Rebel Cave -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="13" />
+      <check offset="1" length="1" value="d" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Ruined Wall -->
     <packetview extends="World_2" region="22">
-      <check offset="1" length="1" value="25" />
+      <check offset="1" length="1" value="19" />
       <const_floor>F7</const_floor>
     </packetview>
     
@@ -903,37 +903,37 @@
     </packetview>
     <!-- Valstein (ruins) -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="14" />
+      <check offset="1" length="1" value="e" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Capital Sewers -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="42" />
+      <check offset="1" length="1" value="2a" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Imperial Museum -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="26" />
+      <check offset="1" length="1" value="1a" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Imperial Palace -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="27" />
+      <check offset="1" length="1" value="1b" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Imperial Palace (Upper Floor) -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="28" />
+      <check offset="1" length="1" value="1c" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Imperial Palace (Basement) -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="43" />
+      <check offset="1" length="1" value="2b" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Imperial Armory -->
     <packetview extends="World_2" region="23">
-      <check offset="1" length="1" value="29" />
+      <check offset="1" length="1" value="1d" />
       <const_floor>F7</const_floor>
     </packetview>
     
@@ -944,17 +944,17 @@
     </packetview>
     <!-- Zephan -->
     <packetview extends="World_2" region="24">
-      <check offset="1" length="1" value="15" />
+      <check offset="1" length="1" value="f" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Pasha's Hall -->
     <packetview extends="World_2" region="24">
-      <check offset="1" length="1" value="30" />
+      <check offset="1" length="1" value="1e" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Umgazur -->
     <packetview extends="World_2" region="24">
-      <check offset="1" length="1" value="44" />
+      <check offset="1" length="1" value="2c" />
       <const_floor>F3</const_floor>
     </packetview>
     
@@ -965,37 +965,37 @@
     </packetview>
     <!-- Saguaro Gulch -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="16" />
+      <check offset="1" length="1" value="10" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Sheriff's Office -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="31" />
+      <check offset="1" length="1" value="1f" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Silver Mines -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="45" />
+      <check offset="1" length="1" value="2d" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Spaceship (Engineering) -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="47" />
+      <check offset="1" length="1" value="2f" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Spaceship (Science) -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="48" />
+      <check offset="1" length="1" value="30" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Spaceship (Residential) -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="49" />
+      <check offset="1" length="1" value="31" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Spaceship (Command) -->
     <packetview extends="World_2" region="25">
-      <check offset="1" length="1" value="50" />
+      <check offset="1" length="1" value="32" />
       <const_floor>F7</const_floor>
     </packetview>
 
@@ -1006,32 +1006,32 @@
     </packetview>
     <!-- Trestan -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="18" />
+      <check offset="1" length="1" value="12" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Golden Coin Casino -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="39" />
+      <check offset="1" length="1" value="27" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Diamond Mines -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="51" />
+      <check offset="1" length="1" value="33" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Dwarf Fortress -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="52" />
+      <check offset="1" length="1" value="34" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Dwarf Fortress (Level 2) -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="53" />
+      <check offset="1" length="1" value="35" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Dwarf Fortress (Level 3) -->
     <packetview extends="World_2" region="26">
-      <check offset="1" length="1" value="54" />
+      <check offset="1" length="1" value="36" />
       <const_floor>F6</const_floor>
     </packetview>
     
@@ -1042,47 +1042,47 @@
     </packetview>
     <!-- Ispahan -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="17" />
+      <check offset="1" length="1" value="11" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Fort Khazdul -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="37" />
+      <check offset="1" length="1" value="25" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Alamut -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="38" />
+      <check offset="1" length="1" value="26" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Thieves Cave -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="46" />
+      <check offset="1" length="1" value="2e" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Golden Tower (Level 1) -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="32" />
+      <check offset="1" length="1" value="20" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Golden Tower (Level 2) -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="33" />
+      <check offset="1" length="1" value="21" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Golden Tower (Level 3) -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="34" />
+      <check offset="1" length="1" value="22" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Golden Tower (Level 4) -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="35" />
+      <check offset="1" length="1" value="23" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Padishah's Palace -->
     <packetview extends="World_2" region="27">
-      <check offset="1" length="1" value="36" />
+      <check offset="1" length="1" value="24" />
       <const_floor>F9</const_floor>
     </packetview>
 
@@ -1092,7 +1092,7 @@
     <!-- WORLD_3 -->
     <!-- Mist Vale -->
     <packetview extends="World_3" region="30">
-      <check offset="1" length="1" value="49" />
+      <check offset="1" length="1" value="31" />
       <const_floor>G</const_floor>
     </packetview>
     <!-- Castle Czernos (normal/hostile) -->
@@ -1103,7 +1103,7 @@
     </packetview>
     <!-- Czernos Crypt -->
     <packetview extends="World_3" region="30">
-      <check offset="1" length="1" value="52" />
+      <check offset="1" length="1" value="34" />
       <const_floor>F2</const_floor>
     </packetview>
     
@@ -1114,12 +1114,12 @@
     </packetview>
     <!-- The High Summit Inn (Main Floor) -->
     <packetview extends="World_3" region="31">
-      <check offset="1" length="1" value="11" />
+      <check offset="1" length="1" value="b" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- The High Summit Inn (Upper Floor) -->
     <packetview extends="World_3" region="31">
-      <check offset="1" length="1" value="12" />
+      <check offset="1" length="1" value="c" />
       <const_floor>F2</const_floor>
     </packetview>
     
@@ -1136,87 +1136,87 @@
     </packetview>
     <!-- Fort Kilby -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="25" />
+      <check offset="1" length="1" value="19" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- The Yellow Sign Inn (Main Floor) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="13" />
+      <check offset="1" length="1" value="d" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- The Yellow Sign Inn (Upper Floor) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="14" />
+      <check offset="1" length="1" value="e" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Esoteric Order Temple (Lower) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="15" />
+      <check offset="1" length="1" value="f" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Esoteric Order Temple (Upper) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="16" />
+      <check offset="1" length="1" value="10" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Aconite Tower (Level 1) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="17" />
+      <check offset="1" length="1" value="11" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Aconite Tower (Level 2) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="18" />
+      <check offset="1" length="1" value="12" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Aconite Tower (Level 3) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="19" />
+      <check offset="1" length="1" value="13" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Aconite Tower (Level 4) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="20" />
+      <check offset="1" length="1" value="14" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Shipwreck (North) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="21" />
+      <check offset="1" length="1" value="15" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- Shipwreck (East) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="22" />
+      <check offset="1" length="1" value="16" />
       <const_floor>F12</const_floor>
     </packetview>
     <!-- Access Tower -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="23" />
+      <check offset="1" length="1" value="17" />
       <const_floor>F13</const_floor>
     </packetview>
     <!-- Sunken City (West) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="33" />
+      <check offset="1" length="1" value="21" />
       <const_floor>F14</const_floor>
     </packetview>
     <!-- Sunken City (Center) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="34" />
+      <check offset="1" length="1" value="22" />
       <const_floor>F15</const_floor>
     </packetview>
     <!-- Sunken City (North) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="35" />
+      <check offset="1" length="1" value="23" />
       <const_floor>F16</const_floor>
     </packetview>
     <!-- Sunken City (Northeast) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="36" />
+      <check offset="1" length="1" value="24" />
       <const_floor>F17</const_floor>
     </packetview>
     <!-- Sunken City (Great Dome) -->
     <packetview extends="World_3" region="32">
-      <check offset="1" length="1" value="37" />
+      <check offset="1" length="1" value="25" />
       <const_floor>F18</const_floor>
     </packetview>
     
@@ -1232,22 +1232,22 @@
     </packetview>
     <!-- Fort Boone -->
     <packetview extends="World_3" region="33">
-      <check offset="1" length="1" value="24" />
+      <check offset="1" length="1" value="18" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Haunted Hospice (Main Floor) -->
     <packetview extends="World_3" region="33">
-      <check offset="1" length="1" value="26" />
+      <check offset="1" length="1" value="1a" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Haunted Hospice (Upper Floor) -->
     <packetview extends="World_3" region="33">
-      <check offset="1" length="1" value="27" />
+      <check offset="1" length="1" value="1b" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Haunted Hospice (Basement) -->
     <packetview extends="World_3" region="33">
-      <check offset="1" length="1" value="28" />
+      <check offset="1" length="1" value="1c" />
       <const_floor>F5</const_floor>
     </packetview>
     
@@ -1258,22 +1258,22 @@
     </packetview>
     <!-- Spy Cave (Iron Gate) -->
     <packetview extends="World_3" region="34">
-      <check offset="1" length="1" value="29" />
+      <check offset="1" length="1" value="1d" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Spy Cave (Steel Gate) -->
     <packetview extends="World_3" region="34">
-      <check offset="1" length="1" value="30" />
+      <check offset="1" length="1" value="1e" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Spy Cave (Adamantine Gate) -->
     <packetview extends="World_3" region="34">
-      <check offset="1" length="1" value="31" />
+      <check offset="1" length="1" value="1f" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Spider Pass -->
     <packetview extends="World_3" region="34">
-      <check offset="1" length="1" value="32" />
+      <check offset="1" length="1" value="20" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Penumbra (crater) -->
@@ -1289,7 +1289,7 @@
     </packetview>
     <!-- Auezvold -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="10" />
+      <check offset="1" length="1" value="a" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Overlord Realm (destroyed) -->
@@ -1299,57 +1299,57 @@
     </packetview>
     <!-- The Underground -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="38" />
+      <check offset="1" length="1" value="26" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Volcano Fortress (Surface) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="39" />
+      <check offset="1" length="1" value="27" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Volcano Fortress (Upper) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="40" />
+      <check offset="1" length="1" value="28" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Volcano Fortress (Lower) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="41" />
+      <check offset="1" length="1" value="29" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- Dark Tower (First Tier) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="42" />
+      <check offset="1" length="1" value="2a" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- Dark Tower (Dungeons) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="43" />
+      <check offset="1" length="1" value="2b" />
       <const_floor>F8</const_floor>
     </packetview>
     <!-- Dark Tower (Second Tier) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="44" />
+      <check offset="1" length="1" value="2c" />
       <const_floor>F9</const_floor>
     </packetview>
     <!-- Dark Tower (Level 1) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="45" />
+      <check offset="1" length="1" value="2d" />
       <const_floor>F10</const_floor>
     </packetview>
     <!-- Dark Tower (Level 2) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="46" />
+      <check offset="1" length="1" value="2e" />
       <const_floor>F11</const_floor>
     </packetview>
     <!-- Dark Tower (Level 3) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="47" />
+      <check offset="1" length="1" value="2f" />
       <const_floor>F12</const_floor>
     </packetview>
     <!-- Dark Tower (Level 4) -->
     <packetview extends="World_3" region="35">
-      <check offset="1" length="1" value="48" />
+      <check offset="1" length="1" value="30" />
       <const_floor>F13</const_floor>
     </packetview>
 
