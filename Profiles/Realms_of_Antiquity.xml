@@ -24,7 +24,7 @@
 
   <regions>
     <!-- World_0 -->
-    <region id="0" name="Alpthorpe" ground_floor="true" start_floor="G" auto_create="true" >
+    <region id="255" name="Alpthorpe" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="1" name="Bonifice" ground_floor="true" start_floor="G" auto_create="true" >
@@ -131,47 +131,47 @@
 
     <!-- WORLD_0 -->
     <!-- Lost Vale -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="0" />
       <const_floor>G</const_floor>
     </packetview>
     <!-- Chilled Pass -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="1" />
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Alpthorpe -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="10" />
       <const_floor>F2</const_floor>
     </packetview>
     <!-- Mayor House -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="21" />
       <const_floor>F3</const_floor>
     </packetview>
     <!-- Hermit's Hut -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="22" />
       <const_floor>F4</const_floor>
     </packetview>
     <!-- Outpost Ruins -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="23" />
       <const_floor>F5</const_floor>
     </packetview>
     <!-- Faeling Lair -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="48" />
       <const_floor>F6</const_floor>
     </packetview>
     <!-- River Cavern -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="49" />
       <const_floor>F7</const_floor>
     </packetview>
     <!-- North Pass -->
-    <packetview extends="World_0" region="0">
+    <packetview extends="World_0" region="255">
       <check offset="1" length="1" value="50" />
       <const_floor>F8</const_floor>
     </packetview>
