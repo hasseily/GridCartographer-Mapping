@@ -1,1740 +1,1358 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <gamelink>
 
-	<card
-		title="REALMS OF ANTIQUITY"
-		short="RoA"
-		titlelo="Realms of Antiquity"
-		beta="true"
+  <card
+		title="REALMS OF ANTIQUITY: THE SHATTERED CROWN"
+		short="Realms of Antiquity"
+		titlelo="Realms of Antiquity: The Shattered Crown"
+		beta="false"
 		rev="1"
 	/>
 
-		<author><![CDATA[Rikkles]]></author>
+  <author><![CDATA[Rikkles]]></author>
+  <!-- NOTE:  The game has hundreds of maps. They have been divided in regions, where the floors
+              have no relation to the map positions in the regions. Each floor is a unique map -->
+  <dsub>
 
-	<dsub>
+    <!-- roacart.bin -->
+    <detect system="Ti-99" sys="637a4c3e" prg="503359be" ph3="503359be" ph2="0" ph1="0" ph0="0">
+      <!-- 0:WorldDisk(0-3) 1:mapID 2:xpos 3:ypos -->
+      <peek bytes="1a004 1a005 1a009 1a007" />
+    </detect>
 
-		<!-- roacart.bin -->
-		<detect system="Ti-99" sys="637a4c3e" prg="503359be" ph3="503359be" ph2="0" ph1="0" ph0="0">
-			<!-- 0:WorldDisk(0-3) 1:mapID 2:xpos 3:ypos -->
-			<peek bytes="1a004 1a005 1a009 1a007" />
-		</detect>
+  </dsub>
 
-	</dsub>
+  <regions>
+    <!-- World_0 -->
+    <region id="0" name="Alpthorpe" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="1" name="Bonifice" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="2" name="Highland Heath" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="3" name="West Glen" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="4" name="Dark Mountains" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="5" name="Blighted Woods" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="6" name="Savage Isles" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <!-- World_1 -->
+    <region id="10" name="Great Forest" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="11" name="Craggy Fjords" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="12" name="Tempest Isles" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="13" name="Whitecrown Mountains" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="14" name="Northern Wastes" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="32" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <!-- World_2 -->
+    <region id="20" name="Prism Isle" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="21" name="Enigma Cube" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="22" name="Eastern District" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="23" name="Capital District" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="24" name="Sandy Coast" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="25" name="Badlands" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="26" name="Diamond Basin" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="27" name="Amari Desert" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <!-- World_3 -->
+    <region id="30" name="Mistvale" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="31" name="Eastern Crossroads" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="32" name="Foulmire" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="33" name="High Marches" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="34" name="Penumbra" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+    <region id="35" name="Overlord's Realm" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
+  </regions>
 
-	<regions>
-		<region id="0" name="Lost Vale" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="1" name="Chilled Pass" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="2" name="South Shore" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="3" name="Highland Heath" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="4" name="West Glen" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="5" name="River Canyon" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="6" name="Blighted Woods" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="7" name="Restored Woods" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="9" name="Savage Isles" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="10" name="Alpthorpe" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="11" name="Port Bonifice" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="12" name="Weymoor" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="13" name="Cragburn" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="14" name="Bleyloch" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="15" name="Graveyard" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels: Include cryptx2 and lich crypt -->
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="16" name="Mondular" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- include Mondular restored -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="18" name="Eburness" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="19" name="Usalari" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="20" name="Pirate Camp" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="21" name="Mayor House" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="22" name="Hermit's Hut" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="23" name="Outpost Ruins" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="24" name="Temple of Light" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="24" height="24" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="25" name="Prince's Home" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- Include Prince's Basement -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="27" name="Thieves Guild" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="28" name="Ruined Priory" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- Include Catacombs in B1 and wizard's lair below -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="29" name="Amber Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="33" name="Fort Granros" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="34" name="Dark Eagle Inn" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="35" name="Sheriff's Home" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="36" name="Isolated Hut" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="37" name="Tower of Loom" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="41" name="Crimson Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="45" name="Pirate Ship" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="46" name="Fort Kinney" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="47" name="Pirate Hut" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="48" name="Faeling Lair" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="49" name="River Cavern" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="50" name="North Pass" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="51" name="Iron Mines" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 6 different levels including Grootslang's Lair -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="60" name="Pass Cave West" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="62" name="Black Pit" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="68" name="Smuggler's Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="69" name="Dungeon of Dread" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="71" name="Volcano Cavern" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="72" name="Volcano Caldera" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="74" name="Obsidian Dungeon" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="100" name="Great Forest" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="101" name="Faery World" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="102" name="Craggy Fjords" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="103" name="Jotunheim" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="105" name="Tempest Isles" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="106" name="Mountain Pass" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="107" name="Frozen Tundra" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="108" name="Glacier Wastes" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="109" name="Lost Crater" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="110" name="Ashford" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="111" name="Skalburg" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="112" name="Valwick" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="113" name="Regnhurst" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="114" name="Rimefell" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="115" name="Whispering Ruins" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="116" name="Castle Drunach" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="118" name="Verdant Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="122" name="Hermit's Hut" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="123" name="Faecaisteal" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels including Queen -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="126" name="Jarl's Hall" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="127" name="Fort Edon" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="128" name="Jotnar Castle" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- Includes treasure vault -->
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="130" name="Cobalt Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="134" name="Monastery" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes upper level, basement and 3 x thieves sanctuary -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="136" name="Skye Abbey" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="24" height="24" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="137" name="Azure Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="141" name="Abandoned Camp" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="142" name="Lost Ruins" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="143" name="The Mound" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes The Mound (faerie) -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="145" name="Troll Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="148" name="Jotunheim Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="149" name="Spider Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="150" name="Wyrm Lair" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="151" name="Hero Crypt" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="156" name="Whispering Ruins" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="158" name="Glacial Caverns" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="160" name="Crystal Caves" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="200" name="Prism Isle" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="202" name="Eastern District" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- include capital district -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="206" name="Sandy Coast" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="207" name="Badlands" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="208" name="Diamond Basin" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="209" name="Great Desert" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="210" name="Osthaven" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels including anarchy & peaceful -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="213" name="Rebel Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="214" name="Valstein" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="215" name="Zephan" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="216" name="Saguaro Gulch" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="217" name="Ispahan" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="218" name="Trestan" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="219" name="Hall of Portals" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="220" name="Pristine Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="222" name="Voivode's Hall" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="224" name="Fort Aubrey" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="225" name="Ruined Wall" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="226" name="Imperial Museum" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="227" name="Imperial Palace" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="229" name="Imperial Armory" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="230" name="Pasha's Hall" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="231" name="Sheriff's Office" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="232" name="Golden Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="236" name="Padishah's Palace" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="237" name="Fort Khazdul" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="238" name="Alamut" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="239" name="Golden Coin Casino" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="240" name="Remzak's Maze" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="242" name="Capital Sewers" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="244" name="Umgazur" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="245" name="Silver Mines" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="246" name="Thieves Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="247" name="Spaceship" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="251" name="Diamond Mines" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="252" name="Dwarf Fortress" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="300" name="Eastern Crossroads" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="301" name="Foul Mire" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="302" name="High Marches" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="303" name="Penumbra" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes crater -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="305" name="Overlord Realm" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes destroyed -->
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="307" name="Fensmouth" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes hostile. same map? -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="309" name="Cedarwold" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="310" name="Auezvold" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="311" name="The High Summit Inn" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="313" name="The Yellow Sign Inn" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="315" name="Esoteric Order Temple" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 2 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="317" name="Aconite Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 4 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="321" name="Shipwreck" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- includes East (this is North) -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="323" name="Access Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="324" name="Fort Boone" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="325" name="Fort Kilby" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="326" name="Haunted Hospice" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="329" name="Spy Cave" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="332" name="Spider Pass" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="333" name="Sunken City" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 5 levels (maybe merge in 1 map?) -->
-			<grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="338" name="The Underground" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="24" height="24" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="339" name="Volcano Fortress" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="342" name="Dark Tower" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 7 levels -->
-			<grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="349" name="Mist Vale" ground_floor="true" start_floor="G" auto_create="true" >
-			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-		<region id="350" name="Castle Czernos" ground_floor="true" start_floor="G" auto_create="true" >
-			<!-- 3 levels including hostile -->
-			<grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
-		</region>
-	</regions>
+  <views>
+    <class name="World_0">
+      <check offset="0" length="1" value="0" />
+      <xpos offset="3" length="1" min="0" max="ff" />
+      <ypos offset="2" length="1" min="0" max="ff" />
+    </class>
+    <class name="World_1">
+      <check offset="0" length="1" value="1" />
+      <xpos offset="3" length="1" min="0" max="ff" />
+      <ypos offset="2" length="1" min="0" max="ff" />
+    </class>
+    <class name="World_2">
+      <check offset="0" length="1" value="2" />
+      <xpos offset="3" length="1" min="0" max="ff" />
+      <ypos offset="2" length="1" min="0" max="ff" />
+    </class>
+    <class name="World_3">
+      <check offset="0" length="1" value="3" />
+      <xpos offset="3" length="1" min="0" max="ff" />
+      <ypos offset="2" length="1" min="0" max="ff" />
+    </class>
 
-	<views>
-		<class name="World_0">
-			<check offset="0" length="1" value="0" />
-			<xpos offset="3" length="1" min="0" max="ff" />
-			<ypos offset="2" length="1" min="0" max="ff" />
-		</class>
-		<class name="World_1">
-			<check offset="0" length="1" value="1" />
-			<xpos offset="3" length="1" min="0" max="ff" />
-			<ypos offset="2" length="1" min="0" max="ff" />
-		</class>
-		<class name="World_2">
-			<check offset="0" length="1" value="2" />
-			<xpos offset="3" length="1" min="0" max="ff" />
-			<ypos offset="2" length="1" min="0" max="ff" />
-		</class>
-		<class name="World_3">
-			<check offset="0" length="1" value="3" />
-			<xpos offset="3" length="1" min="0" max="ff" />
-			<ypos offset="2" length="1" min="0" max="ff" />
-		</class>
-	
     <!-- WORLD_0 -->
     <!-- Lost Vale -->
-		<packetview extends="World_0" region="0">
-			<check offset="1" length="1" value="0" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Chilled Pass -->
-		<packetview extends="World_0" region="1">
-			<check offset="1" length="1" value="1" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- South Shore -->
-		<packetview extends="World_0" region="2">
-			<check offset="1" length="1" value="2" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Highland Heath -->
-		<packetview extends="World_0" region="3">
-			<check offset="1" length="1" value="3" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- West Glen -->
-		<packetview extends="World_0" region="4">
-			<check offset="1" length="1" value="4" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- River Canyon -->
-		<packetview extends="World_0" region="5">
-			<check offset="1" length="1" value="5" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Blighted Woods -->
-		<packetview extends="World_0" region="6">
-			<check offset="1" length="1" value="6" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Restored Woods -->
-		<packetview extends="World_0" region="7">
-			<check offset="1" length="1" value="7" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Savage Isles -->
-		<packetview extends="World_0" region="9">
-			<check offset="1" length="1" value="9" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Alpthorpe -->
-		<packetview extends="World_0" region="10">
-			<check offset="1" length="1" value="10" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Port Bonifice -->
-		<packetview extends="World_0" region="11">
-			<check offset="1" length="1" value="11" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Weymoor -->
-		<packetview extends="World_0" region="12">
-			<check offset="1" length="1" value="12" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Cragburn -->
-		<packetview extends="World_0" region="13">
-			<check offset="1" length="1" value="13" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Bleyloch -->
-		<packetview extends="World_0" region="14">
-			<check offset="1" length="1" value="14" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Graveyard -->
-		<packetview extends="World_0" region="15">
-			<check offset="1" length="1" value="15" />
-			<const_floor>G</const_floor>
-		</packetview>
-    				<!-- Crypt 1 -->
-		<packetview extends="World_0" region="15">
-			<check offset="1" length="1" value="65" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Crypt 2 -->
-		<packetview extends="World_0" region="15">
-			<check offset="1" length="1" value="66" />
-			<const_floor>B2</const_floor>
-		</packetview>
-						<!-- Lich Crypt -->
-		<packetview extends="World_0" region="15">
-			<check offset="1" length="1" value="67" />
-			<const_floor>B3</const_floor>
-		</packetview>
-		<!-- Mondular (cursed) -->
-		<packetview extends="World_0" region="16">
-			<check offset="1" length="1" value="16" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Mondular (restored) -->
-		<packetview extends="World_0" region="16">
-			<check offset="1" length="1" value="17" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Eburness -->
-		<packetview extends="World_0" region="18">
-			<check offset="1" length="1" value="18" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Usalari -->
-		<packetview extends="World_0" region="19">
-			<check offset="1" length="1" value="19" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Pirate Camp -->
-		<packetview extends="World_0" region="20">
-			<check offset="1" length="1" value="20" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Mayor House -->
-		<packetview extends="World_0" region="21">
-			<check offset="1" length="1" value="21" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Hermit's Hut -->
-		<packetview extends="World_0" region="22">
-			<check offset="1" length="1" value="22" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Outpost Ruins -->
-		<packetview extends="World_0" region="23">
-			<check offset="1" length="1" value="23" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Temple of Light -->
-		<packetview extends="World_0" region="24">
-			<check offset="1" length="1" value="24" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Prince's Home -->
-		<packetview extends="World_0" region="25">
-			<check offset="1" length="1" value="25" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Prince's Basement -->
-		<packetview extends="World_0" region="25">
-			<check offset="1" length="1" value="26" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Thieves Guild -->
-		<packetview extends="World_0" region="27">
-			<check offset="1" length="1" value="27" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Ruined Priory -->
-		<packetview extends="World_0" region="28">
-			<check offset="1" length="1" value="28" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Catacombs -->
-		<packetview extends="World_0" region="28">
-			<check offset="1" length="1" value="57" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Wizards Lair -->
-		<packetview extends="World_0" region="28">
-			<check offset="1" length="1" value="58" />
-			<const_floor>B2</const_floor>
-		</packetview>
-						<!-- Wizards Lair (Pit) -->
-		<packetview extends="World_0" region="28">
-			<check offset="1" length="1" value="59" />
-			<const_floor>B3</const_floor>
-		</packetview>
-		<!-- Amber Tower (Level 1) -->
-		<packetview extends="World_0" region="29">
-			<check offset="1" length="1" value="29" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Amber Tower (Level 2) -->
-		<packetview extends="World_0" region="29">
-			<check offset="1" length="1" value="30" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Amber Tower (Level 3) -->
-		<packetview extends="World_0" region="29">
-			<check offset="1" length="1" value="31" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Amber Tower (Level 4) -->
-		<packetview extends="World_0" region="29">
-			<check offset="1" length="1" value="32" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Fort Granros -->
-		<packetview extends="World_0" region="33">
-			<check offset="1" length="1" value="33" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Dark Eagle Inn -->
-		<packetview extends="World_0" region="34">
-			<check offset="1" length="1" value="34" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Sheriff's Home -->
-		<packetview extends="World_0" region="35">
-			<check offset="1" length="1" value="35" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Isolated Hut -->
-		<packetview extends="World_0" region="36">
-			<check offset="1" length="1" value="36" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Tower of Loom (Level 1) -->
-		<packetview extends="World_0" region="37">
-			<check offset="1" length="1" value="37" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Tower of Loom (Level 2) -->
-		<packetview extends="World_0" region="37">
-			<check offset="1" length="1" value="38" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Tower of Loom (Level 3) -->
-		<packetview extends="World_0" region="37">
-			<check offset="1" length="1" value="39" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Tower of Loom (Level 4) -->
-		<packetview extends="World_0" region="37">
-			<check offset="1" length="1" value="40" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Crimson Tower (Level 1) -->
-		<packetview extends="World_0" region="41">
-			<check offset="1" length="1" value="41" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Crimson Tower (Level 2) -->
-		<packetview extends="World_0" region="41">
-			<check offset="1" length="1" value="42" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Crimson Tower (Level 3) -->
-		<packetview extends="World_0" region="41">
-			<check offset="1" length="1" value="43" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Crimson Tower (Level 4) -->
-		<packetview extends="World_0" region="41">
-			<check offset="1" length="1" value="44" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Pirate Ship -->
-		<packetview extends="World_0" region="45">
-			<check offset="1" length="1" value="45" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Fort Kinney -->
-		<packetview extends="World_0" region="46">
-			<check offset="1" length="1" value="46" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Pirate Hut -->
-		<packetview extends="World_0" region="47">
-			<check offset="1" length="1" value="47" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Faeling Lair -->
-		<packetview extends="World_0" region="48">
-			<check offset="1" length="1" value="48" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- River Cavern -->
-		<packetview extends="World_0" region="49">
-			<check offset="1" length="1" value="49" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- North Pass -->
-		<packetview extends="World_0" region="50">
-			<check offset="1" length="1" value="50" />
-			<const_floor>G</const_floor>
-		</packetview>    
-		<!-- Iron Mines -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="51" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Iron Mines (Dry) -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="52" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Iron Mines (Flooded) -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="53" />
-			<const_floor>B2</const_floor>
-		</packetview>
-						<!-- Flood switch (off) -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="54" />
-			<const_floor>B3</const_floor>
-		</packetview>
-						<!-- Flood switch (on) -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="55" />
-			<const_floor>B4</const_floor>
-		</packetview>
-						<!-- Grootslang's Lair -->
-		<packetview extends="World_0" region="51">
-			<check offset="1" length="1" value="56" />
-			<const_floor>B5</const_floor>
-		</packetview>
-		<!-- Pass Cave West -->
-		<packetview extends="World_0" region="60">
-			<check offset="1" length="1" value="60" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Pass Cave West -->
-		<packetview extends="World_0" region="60">
-			<check offset="1" length="1" value="61" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Black Pit (Level 1) -->
-		<packetview extends="World_0" region="62">
-			<check offset="1" length="1" value="62" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Black Pit (Level 2) -->
-		<packetview extends="World_0" region="62">
-			<check offset="1" length="1" value="63" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Black Pit (Level 3) -->
-		<packetview extends="World_0" region="62">
-			<check offset="1" length="1" value="64" />
-			<const_floor>B2</const_floor>
-		</packetview>
-		<!-- Smuggler's Cave -->
-		<packetview extends="World_0" region="68">
-			<check offset="1" length="1" value="68" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Dungeon of Dread (Level 1) -->
-		<packetview extends="World_0" region="69">
-			<check offset="1" length="1" value="69" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Dungeon of Dread (Level 2) -->
-		<packetview extends="World_0" region="69">
-			<check offset="1" length="1" value="70" />
-			<const_floor>B2</const_floor>
-		</packetview>
-		<!-- Volcano Cavern -->
-		<packetview extends="World_0" region="71">
-			<check offset="1" length="1" value="71" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Volcano Caldera (high) -->
-		<packetview extends="World_0" region="72">
-			<check offset="1" length="1" value="72" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Volcano Caldera (low) -->
-		<packetview extends="World_0" region="72">
-			<check offset="1" length="1" value="73" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Obsidian Dungeon (Level 1) -->
-		<packetview extends="World_0" region="74">
-			<check offset="1" length="1" value="74" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Obsidian Dungeon (Level 2) -->
-		<packetview extends="World_0" region="74">
-			<check offset="1" length="1" value="75" />
-			<const_floor>B1</const_floor>
-		</packetview>
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="0" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Chilled Pass -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="1" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Alpthorpe -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="10" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Mayor House -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="21" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Hermit's Hut -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="22" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Outpost Ruins -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="23" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Faeling Lair -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="48" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- River Cavern -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="49" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- North Pass -->
+    <packetview extends="World_0" region="0">
+      <check offset="1" length="1" value="50" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    
+    <!-- South Shore -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="2" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Port Bonifice -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="11" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Temple of Light -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="24" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Prince's Home -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="25" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Prince's Basement -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="26" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Thieves Guild -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="27" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Iron Mines -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="51" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Iron Mines (Dry) -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="52" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Iron Mines (Flooded) -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="53" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Flood switch (off) -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="54" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Flood switch (on) -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="55" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Grootslang's Lair -->
+    <packetview extends="World_0" region="1">
+      <check offset="1" length="1" value="56" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    
+    <!-- Highland Heath -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="3" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Weymoor -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="12" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Ruined Priory -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="28" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Amber Tower (Level 1) -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="29" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Amber Tower (Level 2) -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="30" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Amber Tower (Level 3) -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="31" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Amber Tower (Level 4) -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="32" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Fort Granros -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="33" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Catacombs -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="57" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Wizards Lair -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="58" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Wizards Lair (Pit) -->
+    <packetview extends="World_0" region="2">
+      <check offset="1" length="1" value="59" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    
+    <!-- West Glen -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="4" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Bleyloch -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="14" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Graveyard -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="15" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Sheriff's Home -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="35" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Isolated Hut -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="36" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Crypt 1 -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="65" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Crypt 2 -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="66" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Lich Crypt -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="67" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Smuggler's Cave -->
+    <packetview extends="World_0" region="3">
+      <check offset="1" length="1" value="68" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    
+    <!-- River Canyon -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="5" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Cragburn -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="13" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Dark Eagle Inn -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="34" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Pass Cave West -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="60" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Pass Cave West -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="61" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Black Pit (Level 1) -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="62" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Black Pit (Level 2) -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="63" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Black Pit (Level 3) -->
+    <packetview extends="World_0" region="4">
+      <check offset="1" length="1" value="64" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    
+    <!-- Blighted Woods -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="6" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Restored Woods -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="7" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Mondular (cursed) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="16" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Mondular (restored) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="17" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Tower of Loom (Level 1) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="37" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Tower of Loom (Level 2) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="38" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Tower of Loom (Level 3) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="39" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Tower of Loom (Level 4) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="40" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Dungeon of Dread (Level 1) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="69" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Dungeon of Dread (Level 2) -->
+    <packetview extends="World_0" region="5">
+      <check offset="1" length="1" value="70" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    
+    <!-- Savage Isles -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="9" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Eburness -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="18" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Usalari -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="19" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Pirate Camp -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="20" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Crimson Tower (Level 1) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="41" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Crimson Tower (Level 2) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="42" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Crimson Tower (Level 3) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="43" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Crimson Tower (Level 4) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="44" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Pirate Ship -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="45" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Fort Kinney -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="46" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Pirate Hut -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="47" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Volcano Cavern -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="71" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- Volcano Caldera (high) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="72" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    <!-- Volcano Caldera (low) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="73" />
+      <const_floor>F13</const_floor>
+    </packetview>
+    <!-- Obsidian Dungeon (Level 1) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="74" />
+      <const_floor>F14</const_floor>
+    </packetview>
+    <!-- Obsidian Dungeon (Level 2) -->
+    <packetview extends="World_0" region="6">
+      <check offset="1" length="1" value="75" />
+      <const_floor>F15</const_floor>
+    </packetview>
 
-		<!-- WORLD_1 -->
-		<!-- Great Forest -->
-		<packetview extends="World_1" region="100">
-			<check offset="1" length="1" value="100" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Faery World -->
-		<packetview extends="World_1" region="101">
-			<check offset="1" length="1" value="101" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Craggy Fjords -->
-		<packetview extends="World_1" region="102">
-			<check offset="1" length="1" value="102" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Jotunheim -->
-		<packetview extends="World_1" region="103">
-			<check offset="1" length="1" value="103" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Tempest Isles -->
-		<packetview extends="World_1" region="105">
-			<check offset="1" length="1" value="105" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Mountain Pass -->
-		<packetview extends="World_1" region="106">
-			<check offset="1" length="1" value="106" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Frozen Tundra -->
-		<packetview extends="World_1" region="107">
-			<check offset="1" length="1" value="107" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Glacier Wastes -->
-		<packetview extends="World_1" region="108">
-			<check offset="1" length="1" value="108" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Lost Crater -->
-		<packetview extends="World_1" region="109">
-			<check offset="1" length="1" value="109" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Ashford -->
-		<packetview extends="World_1" region="110">
-			<check offset="1" length="1" value="110" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Skalburg -->
-		<packetview extends="World_1" region="111">
-			<check offset="1" length="1" value="111" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Valwick -->
-		<packetview extends="World_1" region="112">
-			<check offset="1" length="1" value="112" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Regnhurst -->
-		<packetview extends="World_1" region="113">
-			<check offset="1" length="1" value="113" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Rimefell -->
-		<packetview extends="World_1" region="114">
-			<check offset="1" length="1" value="114" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Whispering Ruins -->
-		<packetview extends="World_1" region="115">
-			<check offset="1" length="1" value="115" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Castle Drunach (Level 1) -->
-		<packetview extends="World_1" region="116">
-			<check offset="1" length="1" value="116" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Castle Drunach (Level 2) -->
-		<packetview extends="World_1" region="116">
-			<check offset="1" length="1" value="117" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Verdant Tower (Level 1) -->
-		<packetview extends="World_1" region="118">
-			<check offset="1" length="1" value="118" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Verdant Tower (Level 2) -->
-		<packetview extends="World_1" region="118">
-			<check offset="1" length="1" value="119" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Verdant Tower (Level 3) -->
-		<packetview extends="World_1" region="118">
-			<check offset="1" length="1" value="120" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Verdant Tower (Level 4) -->
-		<packetview extends="World_1" region="118">
-			<check offset="1" length="1" value="121" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Hermit's Hut -->
-		<packetview extends="World_1" region="122">
-			<check offset="1" length="1" value="122" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Faecaisteal (Level 1) -->
-		<packetview extends="World_1" region="123">
-			<check offset="1" length="1" value="123" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Faecaisteal (Level 2) -->
-		<packetview extends="World_1" region="123">
-			<check offset="1" length="1" value="124" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Faecaisteal (Queen) -->
-		<packetview extends="World_1" region="123">
-			<check offset="1" length="1" value="125" />
-			<const_floor>F2</const_floor>
-		</packetview>
-		<!-- Jarl's Hall -->
-		<packetview extends="World_1" region="126">
-			<check offset="1" length="1" value="126" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Fort Edon -->
-		<packetview extends="World_1" region="127">
-			<check offset="1" length="1" value="127" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Jotnar Castle -->
-		<packetview extends="World_1" region="128">
-			<check offset="1" length="1" value="128" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Treasure Vault -->
-		<packetview extends="World_1" region="128">
-			<check offset="1" length="1" value="129" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Cobalt Tower (Level 1) -->
-		<packetview extends="World_1" region="130">
-			<check offset="1" length="1" value="130" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Cobalt Tower (Level 2) -->
-		<packetview extends="World_1" region="130">
-			<check offset="1" length="1" value="131" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Cobalt Tower (Level 3) -->
-		<packetview extends="World_1" region="130">
-			<check offset="1" length="1" value="132" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Cobalt Tower (Level 4) -->
-		<packetview extends="World_1" region="130">
-			<check offset="1" length="1" value="133" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Monastery -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="134" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Monastery (Upper Level) -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="135" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Monastery Basement -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="152" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Thieves Sanctuary (Outer) -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="153" />
-			<const_floor>B2</const_floor>
-		</packetview>
-						<!-- Thieves Sanctuary (Inner) -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="154" />
-			<const_floor>B3</const_floor>
-		</packetview>
-						<!-- Thieves Sanctuary (Maze) -->
-		<packetview extends="World_1" region="134">
-			<check offset="1" length="1" value="155" />
-			<const_floor>B4</const_floor>
-		</packetview>
+
+
+
+    <!-- WORLD_1 -->
+    <!-- Great Forest -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="0" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Faery World -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="1" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Ashford -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="10" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Castle Drunach (Level 1) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="16" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Castle Drunach (Level 2) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="17" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Verdant Tower (Level 1) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="18" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Verdant Tower (Level 2) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="19" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Verdant Tower (Level 3) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="20" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Verdant Tower (Level 4) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="21" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Faecaisteal (Level 1) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="23" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Faecaisteal (Level 2) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="24" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Faecaisteal (Queen) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="25" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- The Mound -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="43" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    <!-- The Mound (Faery) -->
+    <packetview extends="World_1" region="10">
+      <check offset="1" length="1" value="44" />
+      <const_floor>F13</const_floor>
+    </packetview>
+    
+    <!-- Craggy Fjords -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="2" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Skalburg -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="11" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Valwick -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="12" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Jarl's Hall -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="26" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Fort Edon -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="27" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Troll Cave 1 -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="45" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Troll Cave 2 -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="46" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Troll Cave 3 -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="47" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Jotunheim Cave -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="48" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Jotunheim -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="3" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Spider Cave -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="49" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Jotnar Castle -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="28" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- Treasure Vault -->
+    <packetview extends="World_1" region="11">
+      <check offset="1" length="1" value="29" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    
+    <!-- Tempest Isles -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="5" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Regnhurst -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="13" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Wyrm Lair -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="50" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Hero Crypt -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="51" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Cobalt Tower (Level 1) -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="30" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Cobalt Tower (Level 2) -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="31" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Cobalt Tower (Level 3) -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="32" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Cobalt Tower (Level 4) -->
+    <packetview extends="World_1" region="12">
+      <check offset="1" length="1" value="33" />
+      <const_floor>F7</const_floor>
+    </packetview>
+
+
+    <!-- Mountain Pass -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="6" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Hermit's Hut -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="22" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Monastery -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="34" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Monastery (Upper Level) -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="35" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Monastery Basement -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="52" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Thieves Sanctuary (Outer) -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="53" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Thieves Sanctuary (Inner) -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="54" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Thieves Sanctuary (Maze) -->
+    <packetview extends="World_1" region="13">
+      <check offset="1" length="1" value="55" />
+      <const_floor>F7</const_floor>
+    </packetview>
+
+    <!-- Frozen Tundra -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="7" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Rimefell -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="14" />
+      <const_floor>F1</const_floor>
+    </packetview>
     <!-- Skye Abbey -->
-		<packetview extends="World_1" region="136">
-			<check offset="1" length="1" value="136" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Azure Tower (Level 1) -->
-		<packetview extends="World_1" region="137">
-			<check offset="1" length="1" value="137" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Azure Tower (Level 2) -->
-		<packetview extends="World_1" region="137">
-			<check offset="1" length="1" value="138" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Azure Tower (Level 3) -->
-		<packetview extends="World_1" region="137">
-			<check offset="1" length="1" value="139" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Azure Tower (Level 4) -->
-		<packetview extends="World_1" region="137">
-			<check offset="1" length="1" value="140" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Abandoned Camp -->
-		<packetview extends="World_1" region="141">
-			<check offset="1" length="1" value="141" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Lost Ruins -->
-		<packetview extends="World_1" region="142">
-			<check offset="1" length="1" value="142" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- The Mound -->
-		<packetview extends="World_1" region="143">
-			<check offset="1" length="1" value="143" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- The Mound (Faery) -->
-		<packetview extends="World_1" region="143">
-			<check offset="1" length="1" value="144" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Troll Cave 1 -->
-		<packetview extends="World_1" region="145">
-			<check offset="1" length="1" value="145" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Troll Cave 2 -->
-		<packetview extends="World_1" region="145">
-			<check offset="1" length="1" value="146" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Troll Cave 3 -->
-		<packetview extends="World_1" region="145">
-			<check offset="1" length="1" value="147" />
-			<const_floor>B2</const_floor>
-		</packetview>
-		<!-- Jotunheim Cave -->
-		<packetview extends="World_1" region="148">
-			<check offset="1" length="1" value="148" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Spider Cave -->
-		<packetview extends="World_1" region="149">
-			<check offset="1" length="1" value="149" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Wyrm Lair -->
-		<packetview extends="World_1" region="150">
-			<check offset="1" length="1" value="150" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Hero Crypt -->
-		<packetview extends="World_1" region="151">
-			<check offset="1" length="1" value="151" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Whispering Ruins (Level 1) -->
-		<packetview extends="World_1" region="156">
-			<check offset="1" length="1" value="156" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Whispering Ruins (Level 2) -->
-		<packetview extends="World_1" region="156">
-			<check offset="1" length="1" value="157" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Glacial Caverns 1 -->
-		<packetview extends="World_1" region="158">
-			<check offset="1" length="1" value="158" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Glacial Caverns 2 -->
-		<packetview extends="World_1" region="158">
-			<check offset="1" length="1" value="159" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Crystal Caves -->
-		<packetview extends="World_1" region="160">
-			<check offset="1" length="1" value="160" />
-			<const_floor>G</const_floor>
-		</packetview>
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="36" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Azure Tower (Level 1) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="37" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Azure Tower (Level 2) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="38" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Azure Tower (Level 3) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="39" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Azure Tower (Level 4) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="40" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Whispering Ruins -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="15" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Whispering Ruins (Level 1) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="56" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Whispering Ruins (Level 2) -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="57" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Glacier Wastes -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="08" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Glacial Caverns 1 -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="58" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- Glacial Caverns 2 -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="59" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    <!-- Abandoned Camp -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="41" />
+      <const_floor>F13</const_floor>
+    </packetview>
+    <!-- Lost Ruins -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="42" />
+      <const_floor>F14</const_floor>
+    </packetview>
+    <!-- Lost Crater -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="9" />
+      <const_floor>F15</const_floor>
+    </packetview>
+    <!-- Crystal Caves -->
+    <packetview extends="World_1" region="14">
+      <check offset="1" length="1" value="60" />
+      <const_floor>F16</const_floor>
+    </packetview>
 
+    
+    
+    
     <!-- WORLD_2 -->
-		<!-- Prism Isle -->
-		<packetview extends="World_2" region="200">
-			<check offset="1" length="1" value="200" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Eastern District -->
-		<packetview extends="World_2" region="202">
-			<check offset="1" length="1" value="202" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Capital District -->
-		<packetview extends="World_2" region="202">
-			<check offset="1" length="1" value="203" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Sandy Coast -->
-		<packetview extends="World_2" region="206">
-			<check offset="1" length="1" value="206" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Badlands -->
-		<packetview extends="World_2" region="207">
-			<check offset="1" length="1" value="207" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Diamond Basin -->
-		<packetview extends="World_2" region="208">
-			<check offset="1" length="1" value="208" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Great Desert -->
-		<packetview extends="World_2" region="209">
-			<check offset="1" length="1" value="209" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Osthaven -->
-		<packetview extends="World_2" region="210">
-			<check offset="1" length="1" value="210" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Osthaven (anarchy) -->
-		<packetview extends="World_2" region="210">
-			<check offset="1" length="1" value="211" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Osthaven (peaceful) -->
-		<packetview extends="World_2" region="210">
-			<check offset="1" length="1" value="212" />
-			<const_floor>F2</const_floor>
-		</packetview>
-		<!-- Rebel Cave -->
-		<packetview extends="World_2" region="213">
-			<check offset="1" length="1" value="213" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Valstein (ruins) -->
-		<packetview extends="World_2" region="214">
-			<check offset="1" length="1" value="214" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Zephan -->
-		<packetview extends="World_2" region="215">
-			<check offset="1" length="1" value="215" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Saguaro Gulch -->
-		<packetview extends="World_2" region="216">
-			<check offset="1" length="1" value="216" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Ispahan -->
-		<packetview extends="World_2" region="217">
-			<check offset="1" length="1" value="217" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Trestan -->
-		<packetview extends="World_2" region="218">
-			<check offset="1" length="1" value="218" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Hall of Portals -->
-		<packetview extends="World_2" region="219">
-			<check offset="1" length="1" value="219" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Pristine Tower (Bottom) -->
-		<packetview extends="World_2" region="220">
-			<check offset="1" length="1" value="220" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Pristine Tower (Top) -->
-		<packetview extends="World_2" region="220">
-			<check offset="1" length="1" value="221" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Voivode's Hall -->
-		<packetview extends="World_2" region="222">
-			<check offset="1" length="1" value="222" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Voivode's Hall (Upper Floor) -->
-		<packetview extends="World_2" region="222">
-			<check offset="1" length="1" value="223" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Voivode's Hall (Basement) -->
-		<packetview extends="World_2" region="222">
-			<check offset="1" length="1" value="241" />
-			<const_floor>B1</const_floor>
-		</packetview>
+    <!-- Prism Isle -->
+    <packetview extends="World_2" region="20">
+      <check offset="1" length="1" value="0" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Pristine Tower (Bottom) -->
+    <packetview extends="World_2" region="20">
+      <check offset="1" length="1" value="20" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Pristine Tower (Top) -->
+    <packetview extends="World_2" region="20">
+      <check offset="1" length="1" value="21" />
+      <const_floor>F2</const_floor>
+    </packetview>
+
+    <!-- Remzak's Maze -->
+    <packetview extends="World_2" region="21">
+      <check offset="1" length="1" value="40" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Hall of Portals -->
+    <packetview extends="World_2" region="21">
+      <check offset="1" length="1" value="19" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    
+    <!-- Eastern District -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="2" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Osthaven normal/anarchy/peaceful -->
+    <packetview extends="World_2" region="22">
+      <check_or offset="1" length="1" value="10" />
+      <check_or offset="1" length="1" value="11" />
+      <check_or offset="1" length="1" value="12" />
+      <const_floor>F1</const_floor>
+    </packetview>
     <!-- Fort Aubrey -->
-		<packetview extends="World_2" region="224">
-			<check offset="1" length="1" value="224" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Ruined Wall -->
-		<packetview extends="World_2" region="225">
-			<check offset="1" length="1" value="225" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Imperial Museum -->
-		<packetview extends="World_2" region="226">
-			<check offset="1" length="1" value="226" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Imperial Palace -->
-		<packetview extends="World_2" region="227">
-			<check offset="1" length="1" value="227" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Imperial Palace (Upper Floor) -->
-		<packetview extends="World_2" region="227">
-			<check offset="1" length="1" value="228" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Imperial Palace (Basement) -->
-		<packetview extends="World_2" region="227">
-			<check offset="1" length="1" value="243" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Imperial Armory -->
-		<packetview extends="World_2" region="229">
-			<check offset="1" length="1" value="229" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Pasha's Hall -->
-		<packetview extends="World_2" region="230">
-			<check offset="1" length="1" value="230" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Sheriff's Office -->
-		<packetview extends="World_2" region="231">
-			<check offset="1" length="1" value="231" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Golden Tower (Level 1) -->
-		<packetview extends="World_2" region="232">
-			<check offset="1" length="1" value="232" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Golden Tower (Level 2) -->
-		<packetview extends="World_2" region="232">
-			<check offset="1" length="1" value="233" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Golden Tower (Level 3) -->
-		<packetview extends="World_2" region="232">
-			<check offset="1" length="1" value="234" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Golden Tower (Level 4) -->
-		<packetview extends="World_2" region="232">
-			<check offset="1" length="1" value="235" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Padishah's Palace -->
-		<packetview extends="World_2" region="236">
-			<check offset="1" length="1" value="236" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Fort Khazdul -->
-		<packetview extends="World_2" region="237">
-			<check offset="1" length="1" value="237" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Alamut -->
-		<packetview extends="World_2" region="238">
-			<check offset="1" length="1" value="238" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Golden Coin Casino -->
-		<packetview extends="World_2" region="239">
-			<check offset="1" length="1" value="239" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Remzak's Maze -->
-		<packetview extends="World_2" region="240">
-			<check offset="1" length="1" value="240" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Capital Sewers -->
-		<packetview extends="World_2" region="242">
-			<check offset="1" length="1" value="242" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Umgazur -->
-		<packetview extends="World_2" region="244">
-			<check offset="1" length="1" value="244" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Silver Mines -->
-		<packetview extends="World_2" region="245">
-			<check offset="1" length="1" value="245" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Thieves Cave -->
-		<packetview extends="World_2" region="246">
-			<check offset="1" length="1" value="246" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Spaceship (Engineering) -->
-		<packetview extends="World_2" region="247">
-			<check offset="1" length="1" value="247" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Spaceship (Science) -->
-		<packetview extends="World_2" region="247">
-			<check offset="1" length="1" value="248" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Spaceship (Residential) -->
-		<packetview extends="World_2" region="247">
-			<check offset="1" length="1" value="249" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Spaceship (Command) -->
-		<packetview extends="World_2" region="247">
-			<check offset="1" length="1" value="250" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Diamond Mines -->
-		<packetview extends="World_2" region="251">
-			<check offset="1" length="1" value="251" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Dwarf Fortress -->
-		<packetview extends="World_2" region="252">
-			<check offset="1" length="1" value="252" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Dwarf Fortress (Level 2) -->
-		<packetview extends="World_2" region="252">
-			<check offset="1" length="1" value="253" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Dwarf Fortress (Level 3) -->
-		<packetview extends="World_2" region="252">
-			<check offset="1" length="1" value="254" />
-			<const_floor>F2</const_floor>
-		</packetview>
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="24" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Voivode's Hall -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="22" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Voivode's Hall (Upper Floor) -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="23" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Voivode's Hall (Basement) -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="41" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Rebel Cave -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="13" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Ruined Wall -->
+    <packetview extends="World_2" region="22">
+      <check offset="1" length="1" value="25" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    
+    <!-- Capital District -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="3" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Valstein (ruins) -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="14" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Capital Sewers -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="42" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Imperial Museum -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="26" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Imperial Palace -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="27" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Imperial Palace (Upper Floor) -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="28" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Imperial Palace (Basement) -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="43" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Imperial Armory -->
+    <packetview extends="World_2" region="23">
+      <check offset="1" length="1" value="29" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    
+    <!-- Sandy Coast -->
+    <packetview extends="World_2" region="24">
+      <check offset="1" length="1" value="6" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Zephan -->
+    <packetview extends="World_2" region="24">
+      <check offset="1" length="1" value="15" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Pasha's Hall -->
+    <packetview extends="World_2" region="24">
+      <check offset="1" length="1" value="30" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Umgazur -->
+    <packetview extends="World_2" region="24">
+      <check offset="1" length="1" value="44" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    
+    <!-- Badlands -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="7" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Saguaro Gulch -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="16" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Sheriff's Office -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="31" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Silver Mines -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="45" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Spaceship (Engineering) -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="47" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Spaceship (Science) -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="48" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Spaceship (Residential) -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="49" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Spaceship (Command) -->
+    <packetview extends="World_2" region="25">
+      <check offset="1" length="1" value="50" />
+      <const_floor>F7</const_floor>
+    </packetview>
+
+    <!-- Diamond Basin -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="8" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Trestan -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="18" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Golden Coin Casino -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="39" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Diamond Mines -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="51" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Dwarf Fortress -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="52" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Dwarf Fortress (Level 2) -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="53" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Dwarf Fortress (Level 3) -->
+    <packetview extends="World_2" region="26">
+      <check offset="1" length="1" value="54" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    
+    <!-- Great Desert -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="9" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Ispahan -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="17" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Fort Khazdul -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="37" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Alamut -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="38" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Thieves Cave -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="46" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Golden Tower (Level 1) -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="32" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Golden Tower (Level 2) -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="33" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Golden Tower (Level 3) -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="34" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Golden Tower (Level 4) -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="35" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Padishah's Palace -->
+    <packetview extends="World_2" region="27">
+      <check offset="1" length="1" value="36" />
+      <const_floor>F9</const_floor>
+    </packetview>
+
+
+
 
     <!-- WORLD_3 -->
-		<!-- Eastern Crossroads -->
-		<packetview extends="World_3" region="300">
-			<check offset="1" length="1" value="300" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Foul Mire -->
-		<packetview extends="World_3" region="301">
-			<check offset="1" length="1" value="301" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- High Marches -->
-		<packetview extends="World_3" region="302">
-			<check offset="1" length="1" value="302" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Penumbra -->
-		<packetview extends="World_3" region="303">
-			<check offset="1" length="1" value="303" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Penumbra (crater) -->
-		<packetview extends="World_3" region="303">
-			<check offset="1" length="1" value="304" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Overlord Realm -->
-		<packetview extends="World_3" region="305">
-			<check offset="1" length="1" value="305" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Overlord Realm (destroyed) -->
-		<packetview extends="World_3" region="305">
-			<check offset="1" length="1" value="306" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Fensmouth -->
-		<packetview extends="World_3" region="307">
-			<check offset="1" length="1" value="307" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Fensmouth (hostile) -->
-		<packetview extends="World_3" region="307">
-			<check offset="1" length="1" value="308" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Cedarwold -->
-		<packetview extends="World_3" region="309">
-			<check offset="1" length="1" value="309" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Auezvold -->
-		<packetview extends="World_3" region="310">
-			<check offset="1" length="1" value="310" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- The High Summit Inn (Main Floor) -->
-		<packetview extends="World_3" region="311">
-			<check offset="1" length="1" value="311" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- The High Summit Inn (Upper Floor) -->
-		<packetview extends="World_3" region="311">
-			<check offset="1" length="1" value="312" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- The Yellow Sign Inn (Main Floor) -->
-		<packetview extends="World_3" region="313">
-			<check offset="1" length="1" value="313" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- The Yellow Sign Inn (Upper Floor) -->
-		<packetview extends="World_3" region="313">
-			<check offset="1" length="1" value="314" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Esoteric Order Temple (Lower) -->
-		<packetview extends="World_3" region="315">
-			<check offset="1" length="1" value="315" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Esoteric Order Temple (Upper) -->
-		<packetview extends="World_3" region="315">
-			<check offset="1" length="1" value="316" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Aconite Tower (Level 1) -->
-		<packetview extends="World_3" region="317">
-			<check offset="1" length="1" value="317" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Aconite Tower (Level 2) -->
-		<packetview extends="World_3" region="317">
-			<check offset="1" length="1" value="318" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Aconite Tower (Level 3) -->
-		<packetview extends="World_3" region="317">
-			<check offset="1" length="1" value="319" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Aconite Tower (Level 4) -->
-		<packetview extends="World_3" region="317">
-			<check offset="1" length="1" value="320" />
-			<const_floor>F3</const_floor>
-		</packetview>
-		<!-- Shipwreck (North) -->
-		<packetview extends="World_3" region="321">
-			<check offset="1" length="1" value="321" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Shipwreck (East) -->
-		<packetview extends="World_3" region="321">
-			<check offset="1" length="1" value="322" />
-			<const_floor>F1</const_floor>
-		</packetview>
-		<!-- Access Tower -->
-		<packetview extends="World_3" region="323">
-			<check offset="1" length="1" value="323" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Fort Boone -->
-		<packetview extends="World_3" region="324">
-			<check offset="1" length="1" value="324" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Fort Kilby -->
-		<packetview extends="World_3" region="325">
-			<check offset="1" length="1" value="325" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Haunted Hospice (Main Floor) -->
-		<packetview extends="World_3" region="326">
-			<check offset="1" length="1" value="326" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Haunted Hospice (Upper Floor) -->
-		<packetview extends="World_3" region="326">
-			<check offset="1" length="1" value="327" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Haunted Hospice (Basement) -->
-		<packetview extends="World_3" region="326">
-			<check offset="1" length="1" value="328" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Spy Cave (Iron Gate) -->
-		<packetview extends="World_3" region="329">
-			<check offset="1" length="1" value="329" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Spy Cave (Steel Gate) -->
-		<packetview extends="World_3" region="329">
-			<check offset="1" length="1" value="330" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Spy Cave (Adamantine Gate) -->
-		<packetview extends="World_3" region="329">
-			<check offset="1" length="1" value="331" />
-			<const_floor>F2</const_floor>
-		</packetview>
-		<!-- Spider Pass -->
-		<packetview extends="World_3" region="332">
-			<check offset="1" length="1" value="332" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Sunken City (West) -->
-		<packetview extends="World_3" region="333">
-			<check offset="1" length="1" value="333" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Sunken City (Center) -->
-		<packetview extends="World_3" region="333">
-			<check offset="1" length="1" value="334" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Sunken City (North) -->
-		<packetview extends="World_3" region="333">
-			<check offset="1" length="1" value="335" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Sunken City (Northeast) -->
-		<packetview extends="World_3" region="333">
-			<check offset="1" length="1" value="336" />
-			<const_floor>F3</const_floor>
-		</packetview>
-						<!-- Sunken City (Great Dome) -->
-		<packetview extends="World_3" region="333">
-			<check offset="1" length="1" value="337" />
-			<const_floor>F4</const_floor>
-		</packetview>
-		<!-- The Underground -->
-		<packetview extends="World_3" region="338">
-			<check offset="1" length="1" value="338" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Volcano Fortress (Surface) -->
-		<packetview extends="World_3" region="339">
-			<check offset="1" length="1" value="339" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Volcano Fortress (Upper) -->
-		<packetview extends="World_3" region="339">
-			<check offset="1" length="1" value="340" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Volcano Fortress (Lower) -->
-		<packetview extends="World_3" region="339">
-			<check offset="1" length="1" value="341" />
-			<const_floor>B1</const_floor>
-		</packetview>
-		<!-- Dark Tower (First Tier) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="342" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Dark Tower (Dungeons) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="343" />
-			<const_floor>B2</const_floor>
-		</packetview>
-						<!-- Dark Tower (Second Tier) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="344" />
-			<const_floor>B1</const_floor>
-		</packetview>
-						<!-- Dark Tower (Level 1) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="345" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Dark Tower (Level 2) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="346" />
-			<const_floor>F2</const_floor>
-		</packetview>
-						<!-- Dark Tower (Level 3) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="347" />
-			<const_floor>F3</const_floor>
-		</packetview>
-						<!-- Dark Tower (Level 4) -->
-		<packetview extends="World_3" region="342">
-			<check offset="1" length="1" value="348" />
-			<const_floor>F4</const_floor>
-		</packetview>
-		<!-- Mist Vale -->
-		<packetview extends="World_3" region="349">
-			<check offset="1" length="1" value="349" />
-			<const_floor>G</const_floor>
-		</packetview>
-		<!-- Castle Czernos -->
-		<packetview extends="World_3" region="350">
-			<check offset="1" length="1" value="350" />
-			<const_floor>G</const_floor>
-		</packetview>
-						<!-- Castle Czernos (Hostile) -->
-		<packetview extends="World_3" region="350">
-			<check offset="1" length="1" value="351" />
-			<const_floor>F1</const_floor>
-		</packetview>
-						<!-- Czernos Crypt -->
-		<packetview extends="World_3" region="350">
-			<check offset="1" length="1" value="352" />
-			<const_floor>B1</const_floor>
-		</packetview>
+    <!-- Mist Vale -->
+    <packetview extends="World_3" region="30">
+      <check offset="1" length="1" value="49" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Castle Czernos (normal/hostile) -->
+    <packetview extends="World_3" region="30">
+      <check_or offset="1" length="1" value="50" />
+      <check_or offset="1" length="1" value="51" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Czernos Crypt -->
+    <packetview extends="World_3" region="30">
+      <check offset="1" length="1" value="52" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    
+    <!-- Eastern Crossroads -->
+    <packetview extends="World_3" region="31">
+      <check offset="1" length="1" value="0" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- The High Summit Inn (Main Floor) -->
+    <packetview extends="World_3" region="31">
+      <check offset="1" length="1" value="11" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- The High Summit Inn (Upper Floor) -->
+    <packetview extends="World_3" region="31">
+      <check offset="1" length="1" value="12" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    
+    <!-- Foul Mire -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="1" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Fensmouth (normal/hostile) -->
+    <packetview extends="World_3" region="32">
+      <check_or offset="1" length="1" value="7" />
+      <check_or offset="1" length="1" value="8" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Fort Kilby -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="25" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- The Yellow Sign Inn (Main Floor) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="13" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- The Yellow Sign Inn (Upper Floor) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="14" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Esoteric Order Temple (Lower) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="15" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Esoteric Order Temple (Upper) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="16" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Aconite Tower (Level 1) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="17" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Aconite Tower (Level 2) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="18" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Aconite Tower (Level 3) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="19" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Aconite Tower (Level 4) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="20" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Shipwreck (North) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="21" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- Shipwreck (East) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="22" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    <!-- Access Tower -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="23" />
+      <const_floor>F13</const_floor>
+    </packetview>
+    <!-- Sunken City (West) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="33" />
+      <const_floor>F14</const_floor>
+    </packetview>
+    <!-- Sunken City (Center) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="34" />
+      <const_floor>F15</const_floor>
+    </packetview>
+    <!-- Sunken City (North) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="35" />
+      <const_floor>F16</const_floor>
+    </packetview>
+    <!-- Sunken City (Northeast) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="36" />
+      <const_floor>F17</const_floor>
+    </packetview>
+    <!-- Sunken City (Great Dome) -->
+    <packetview extends="World_3" region="32">
+      <check offset="1" length="1" value="37" />
+      <const_floor>F18</const_floor>
+    </packetview>
+    
+    <!-- High Marches -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="2" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Cedarwold -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="9" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Fort Boone -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="24" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Haunted Hospice (Main Floor) -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="26" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Haunted Hospice (Upper Floor) -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="27" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Haunted Hospice (Basement) -->
+    <packetview extends="World_3" region="33">
+      <check offset="1" length="1" value="28" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    
+    <!-- Penumbra -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="3" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Spy Cave (Iron Gate) -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="29" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Spy Cave (Steel Gate) -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="30" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- Spy Cave (Adamantine Gate) -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="31" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Spider Pass -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="32" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Penumbra (crater) -->
+    <packetview extends="World_3" region="34">
+      <check offset="1" length="1" value="4" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    
+    <!-- Overlord Realm -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="5" />
+      <const_floor>G</const_floor>
+    </packetview>
+    <!-- Auezvold -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="10" />
+      <const_floor>F1</const_floor>
+    </packetview>
+    <!-- Overlord Realm (destroyed) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="6" />
+      <const_floor>F2</const_floor>
+    </packetview>
+    <!-- The Underground -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="38" />
+      <const_floor>F3</const_floor>
+    </packetview>
+    <!-- Volcano Fortress (Surface) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="39" />
+      <const_floor>F4</const_floor>
+    </packetview>
+    <!-- Volcano Fortress (Upper) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="40" />
+      <const_floor>F5</const_floor>
+    </packetview>
+    <!-- Volcano Fortress (Lower) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="41" />
+      <const_floor>F6</const_floor>
+    </packetview>
+    <!-- Dark Tower (First Tier) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="42" />
+      <const_floor>F7</const_floor>
+    </packetview>
+    <!-- Dark Tower (Dungeons) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="43" />
+      <const_floor>F8</const_floor>
+    </packetview>
+    <!-- Dark Tower (Second Tier) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="44" />
+      <const_floor>F9</const_floor>
+    </packetview>
+    <!-- Dark Tower (Level 1) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="45" />
+      <const_floor>F10</const_floor>
+    </packetview>
+    <!-- Dark Tower (Level 2) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="46" />
+      <const_floor>F11</const_floor>
+    </packetview>
+    <!-- Dark Tower (Level 3) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="47" />
+      <const_floor>F12</const_floor>
+    </packetview>
+    <!-- Dark Tower (Level 4) -->
+    <packetview extends="World_3" region="35">
+      <check offset="1" length="1" value="48" />
+      <const_floor>F13</const_floor>
+    </packetview>
 
-	</views>
+  </views>
 
 </gamelink>
