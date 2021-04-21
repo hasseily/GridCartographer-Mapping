@@ -6,7 +6,7 @@
 		short="Realms of Antiquity"
 		titlelo="Realms of Antiquity: The Shattered Crown"
 		beta="false"
-		rev="1"
+		rev="2"
 	/>
 
   <author><![CDATA[Rikkles]]></author>
@@ -28,13 +28,13 @@
       <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="1" name="Bonifice" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="95" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="2" name="Highland Heath" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="3" name="West Glen" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="79" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="4" name="Dark Mountains" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
@@ -43,17 +43,17 @@
       <grid width="64" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="6" name="Savage Isles" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="127" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <!-- World_1 -->
     <region id="10" name="Great Forest" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="11" name="Craggy Fjords" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="111" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="12" name="Tempest Isles" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="95" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="13" name="Whitecrown Mountains" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
@@ -75,7 +75,7 @@
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="24" name="Sandy Coast" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="95" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="25" name="Badlands" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
@@ -94,10 +94,10 @@
       <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="32" name="Foulmire" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="95" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="33" name="High Marches" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="95" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="34" name="Penumbra" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="48" height="48" tilex="1" tiley="1" repeating="false" origin_tl="true" />
