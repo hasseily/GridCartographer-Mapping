@@ -6,7 +6,7 @@
 		short="Realms of Antiquity"
 		titlelo="Realms of Antiquity: The Shattered Crown"
 		beta="false"
-		rev="2"
+		rev="3"
 	/>
 
   <author><![CDATA[Rikkles]]></author>
@@ -860,9 +860,11 @@
     </packetview>
     <!-- Osthaven normal/anarchy/peaceful -->
     <packetview extends="World_2" region="22">
-      <check_or offset="1" length="1" value="10" />
-      <check_or offset="1" length="1" value="11" />
-      <check_or offset="1" length="1" value="12" />
+      <check_or>
+        <check offset="1" length="1" value="10" />
+        <check offset="1" length="1" value="11" />
+        <check offset="1" length="1" value="12" />
+      </check_or>
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Fort Aubrey -->
@@ -1097,8 +1099,10 @@
     </packetview>
     <!-- Castle Czernos (normal/hostile) -->
     <packetview extends="World_3" region="30">
-      <check_or offset="1" length="1" value="50" />
-      <check_or offset="1" length="1" value="51" />
+      <check_or>
+        <check offset="1" length="1" value="50" />
+        <check offset="1" length="1" value="51" />
+      </check_or>
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Czernos Crypt -->
@@ -1130,8 +1134,10 @@
     </packetview>
     <!-- Fensmouth (normal/hostile) -->
     <packetview extends="World_3" region="32">
-      <check_or offset="1" length="1" value="7" />
-      <check_or offset="1" length="1" value="8" />
+      <check_or>
+        <check offset="1" length="1" value="7" />
+        <check offset="1" length="1" value="8" />
+      </check_or>
       <const_floor>F1</const_floor>
     </packetview>
     <!-- Fort Kilby -->
