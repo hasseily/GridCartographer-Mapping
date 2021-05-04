@@ -6,7 +6,7 @@
 		short="Realms of Antiquity"
 		titlelo="Realms of Antiquity: The Shattered Crown"
 		beta="false"
-		rev="3"
+		rev="4"
 	/>
 
   <author><![CDATA[Rikkles]]></author>
@@ -861,9 +861,9 @@
     <!-- Osthaven normal/anarchy/peaceful -->
     <packetview extends="World_2" region="22">
       <check_or>
-        <check offset="1" length="1" value="10" />
-        <check offset="1" length="1" value="11" />
-        <check offset="1" length="1" value="12" />
+        <check offset="1" length="1" value="a" />
+        <check offset="1" length="1" value="b" />
+        <check offset="1" length="1" value="c" />
       </check_or>
       <const_floor>F1</const_floor>
     </packetview>
@@ -1100,8 +1100,8 @@
     <!-- Castle Czernos (normal/hostile) -->
     <packetview extends="World_3" region="30">
       <check_or>
-        <check offset="1" length="1" value="50" />
-        <check offset="1" length="1" value="51" />
+        <check offset="1" length="1" value="32" />
+        <check offset="1" length="1" value="33" />
       </check_or>
       <const_floor>F1</const_floor>
     </packetview>
