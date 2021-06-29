@@ -40,7 +40,7 @@
       <grid width="32" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="5" name="Blighted Woods" ground_floor="true" start_floor="G" auto_create="true" >
-      <grid width="64" height="32" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+      <grid width="32" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
     <region id="6" name="Savage Isles" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="127" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
