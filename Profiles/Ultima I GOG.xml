@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="ULTIMA I: THE FIRST AGE OF DARKNESS"
+		short="ULTIMA I"
+		titlelo="Ultima I"
+		beta="false"
+		rev="1"
+	/>
+
+    <author><![CDATA[Grauken]]></author>
+
+	<dsub>
+
+		<!-- Ultima.exe (GOG Version and other from the web) -->
+		<detect system="DOS" sys="e9b551c5" prg="faae35b" ph3="0" ph2="c511f1cf" ph1="8e10" ph0="a12a">
+			<peek bytes="1299c 1299e 19c42 19c2e 19c30 19c40 19c32 17a8a" />
+		</detect>
+
+	</dsub>
+
+	<regions>
+
+		<region id="1" name="Sosaria" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="42" height="39" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+
+		<region id="41" name="Towns" ground_floor="false" start_floor="F1" >
+			<grid width="38" height="18" origin_tl="true" />
+		</region>
+		
+		<region id="42" name="Castles" ground_floor="false" start_floor="F1" >
+			<grid width="38" height="18" origin_tl="true" />
+		</region>
+		
+		<region id="2" name="Mines of Mount Drash" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="3" name="Dungeon of Doubt" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="4" name="Dungeon of Montor" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="5" name="The Unholy Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="6" name="Dungeon of Perinia" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="7" name="The Lost Caverns" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="8" name="Mines of Mount Drash II" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="9" name="Death's Awakening" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="10" name="Mondain's Gate to Hell" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="11" name="The Scorpion Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="12" name="The Gorgon Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="13" name="The Dead Warrior's Fight Coffin" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="14" name="The Horror of the Harpies II" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="15" name="The Labyrinth" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="16" name="Where Hercules Died" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="17" name="The Savage Place" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="18" name="Advari's Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="19" name="The Horror of the Harpies" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="20" name="The Viper's Pit" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="21" name="The Tramp of Doom" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="22" name="The Slow Death" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="23" name="The Viper's Pit II" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="24" name="The Long Death" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="25" name="The End" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="26" name="The Metal Twister" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="27" name="The Troll's Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="28" name="The Guild of Death" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="29" name="The Dead Cat's Life II" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="30" name="The Hole to Hades" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="31" name="Dead Man's Walk" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="32" name="Free Death Hole" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="33" name="The Morbid Adventure" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="34" name="The Spine Breaker" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="35" name="The Dungeon of Doom" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="36" name="The Skull Smasher" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+		<region id="37" name="The Dead Cat's Life" ground_floor="false" start_floor="B1" >
+			<grid width="9" height="9" origin_tl="true" />
+		</region>
+
+	</regions>
+
+	<views>
+
+		<!-- Sosaria -->
+		<packetview region="1">
+			<check offset="7" length="1" value="00" />
+			<xpos offset="0" length="1" min="0" max="ff" />
+			<ypos offset="1" length="1" min="0" max="ff" />
+		</packetview>
+
+		<!-- Towns -->
+		<packetview region="41">
+			<check offset="7" length="1" value="01" />
+			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+			<floor offset="6" length="1" min="2" max="a" dir="up" adjust="-1"/>
+		</packetview>		
+		
+		<!-- Castles -->
+		<packetview region="42">
+			<check offset="7" length="1" value="02" />
+			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+			<floor offset="6" length="1" min="0" max="1" dir="up" adjust="+1"/>
+		</packetview>
+		
+		<!-- dungeons -->
+		<class name="dungeon">
+			<check offset="7" length="1" value="03" />
+			<xpos offset="3" length="1" min="1" max="9" />
+			<ypos offset="4" length="1" min="1" max="9" />
+			<move x="-1" y="1" />
+			<floor offset="5" length="1" min="1" max="a" dir="down" />
+			<face offset="2" length="1" n="3" e="2" s="4" w="1" />
+ 		</class>
+
+		<!-- Mines of Mount Drash -->
+		<packetview extends="dungeon" region="2">
+			<check offset="0" length="1" value="3b" />
+			<check offset="1" length="1" value="1d" />
+		</packetview>
+
+		<!-- Dungeon of Doubt -->
+		<packetview extends="dungeon" region="3">
+			<check offset="0" length="1" value="3e" />
+			<check offset="1" length="1" value="31" />
+		</packetview>
+
+		<!-- Dungeon of Montor -->
+		<packetview extends="dungeon" region="4">
+			<check offset="0" length="1" value="35" />
+			<check offset="1" length="1" value="16" />
+		</packetview>
+
+		<!-- The Unholy Hole -->
+		<packetview extends="dungeon" region="5">
+			<check offset="0" length="1" value="30" />
+			<check offset="1" length="1" value="0b" />
+		</packetview>
+
+		<!-- Dungeon of Perinia -->
+		<packetview extends="dungeon" region="6">
+			<check offset="0" length="1" value="12" />
+			<check offset="1" length="1" value="0d" />
+		</packetview>
+
+		<!-- The Lost Caverns -->
+		<packetview extends="dungeon" region="7">
+			<check offset="0" length="1" value="0d" />
+			<check offset="1" length="1" value="2b" />
+		</packetview>
+
+		<!-- Mines of Mount Drash II -->
+		<packetview extends="dungeon" region="8">
+			<check offset="0" length="1" value="27" />
+			<check offset="1" length="1" value="3c" />
+		</packetview>
+
+		<!-- Death's Awakening -->
+		<packetview extends="dungeon" region="9">
+			<check offset="0" length="1" value="26" />
+			<check offset="1" length="1" value="44" />
+		</packetview>
+
+		<!-- Mondain's Gate to Hell -->
+		<packetview extends="dungeon" region="10">
+			<check offset="0" length="1" value="1d" />
+			<check offset="1" length="1" value="25" />
+		</packetview>
+
+		<!-- Scorpion Hole -->
+		<packetview extends="dungeon" region="11">
+			<check offset="0" length="1" value="64" />
+			<check offset="1" length="1" value="0f" />
+		</packetview>
+
+		<!-- The Gorgon Hole -->
+		<packetview extends="dungeon" region="12">
+			<check offset="0" length="1" value="88" />
+			<check offset="1" length="1" value="3b" />
+		</packetview>
+
+		<!-- The Dead Warrior's Fight Coffin -->
+		<packetview extends="dungeon" region="13">
+			<check offset="0" length="1" value="9b" />
+			<check offset="1" length="1" value="23" />
+		</packetview>
+
+		<!-- The Horror of the Harpies II -->
+		<packetview extends="dungeon" region="14">
+			<check offset="0" length="1" value="74" />
+			<check offset="1" length="1" value="38" />
+		</packetview>
+
+		<!-- The Labyrinth -->
+		<packetview extends="dungeon" region="15">
+			<check offset="0" length="1" value="62" />
+			<check offset="1" length="1" value="2d" />
+		</packetview>
+
+		<!-- Where Hercules Died -->
+		<packetview extends="dungeon" region="16">
+			<check offset="0" length="1" value="6d" />
+			<check offset="1" length="1" value="32" />
+		</packetview>
+
+		<!-- The Savage Place -->
+		<packetview extends="dungeon" region="17">
+			<check offset="0" length="1" value="82" />
+			<check offset="1" length="1" value="0a" />
+		</packetview>
+
+		<!-- Advari's Hole -->
+		<packetview extends="dungeon" region="18">
+			<check offset="0" length="1" value="7c" />
+			<check offset="1" length="1" value="1a" />
+		</packetview>
+
+		<!-- The Horror of the Harpies -->
+		<packetview extends="dungeon" region="19">
+			<check offset="0" length="1" value="93" />
+			<check offset="1" length="1" value="24" />
+		</packetview>
+
+		<!-- The Viper's Pit -->
+		<packetview extends="dungeon" region="20">
+			<check offset="0" length="1" value="20" />
+			<check offset="1" length="1" value="63" />
+		</packetview>
+
+		<!-- The Tramp of Doom -->
+		<packetview extends="dungeon" region="21">
+			<check offset="0" length="1" value="34" />
+			<check offset="1" length="1" value="60" />
+		</packetview>
+
+		<!-- The Slow Death -->
+		<packetview extends="dungeon" region="22">
+			<check offset="0" length="1" value="47" />
+			<check offset="1" length="1" value="78" />
+		</packetview>
+
+		<!-- The Viper's Pit II -->
+		<packetview extends="dungeon" region="23">
+			<check offset="0" length="1" value="3f" />
+			<check offset="1" length="1" value="77" />
+		</packetview>
+
+		<!-- The Long Death -->
+		<packetview extends="dungeon" region="24">
+			<check offset="0" length="1" value="19" />
+			<check offset="1" length="1" value="69" />
+		</packetview>
+
+		<!-- The End -->
+		<packetview extends="dungeon" region="25">
+			<check offset="0" length="1" value="0e" />
+			<check offset="1" length="1" value="6e" />
+		</packetview>
+
+		<!-- The Metal Twister -->
+		<packetview extends="dungeon" region="26">
+			<check offset="0" length="1" value="10" />
+			<check offset="1" length="1" value="8c" />
+		</packetview>
+
+		<!-- The Troll's Hole -->
+		<packetview extends="dungeon" region="27">
+			<check offset="0" length="1" value="2e" />
+			<check offset="1" length="1" value="91" />
+		</packetview>
+
+		<!-- The Guild of Death -->
+		<packetview extends="dungeon" region="28">
+			<check offset="0" length="1" value="28" />
+			<check offset="1" length="1" value="81" />
+		</packetview>
+
+		<!-- The Dead Cat's Life II -->
+		<packetview extends="dungeon" region="29">
+			<check offset="0" length="1" value="80" />
+			<check offset="1" length="1" value="8a" />
+		</packetview>
+
+		<!-- The Hole to Hades -->
+		<packetview extends="dungeon" region="30">
+			<check offset="0" length="1" value="81" />
+			<check offset="1" length="1" value="92" />
+		</packetview>
+
+		<!-- Dead Man's Walk -->
+		<packetview extends="dungeon" region="31">
+			<check offset="0" length="1" value="69" />
+			<check offset="1" length="1" value="7f" />
+		</packetview>
+
+		<!-- Free Death Hole -->
+		<packetview extends="dungeon" region="32">
+			<check offset="0" length="1" value="9a" />
+			<check offset="1" length="1" value="79" />
+		</packetview>
+
+		<!-- The Morbid Adventure -->
+		<packetview extends="dungeon" region="33">
+			<check offset="0" length="1" value="8a" />
+			<check offset="1" length="1" value="73" />
+		</packetview>
+
+		<!-- The Spine Breaker -->
+		<packetview extends="dungeon" region="34">
+			<check offset="0" length="1" value="95" />
+			<check offset="1" length="1" value="5b" />
+		</packetview>
+
+		<!-- The Dungeon of Doom -->
+		<packetview extends="dungeon" region="35">
+			<check offset="0" length="1" value="72" />
+			<check offset="1" length="1" value="64" />
+		</packetview>
+
+		<!-- The Skull Smasher -->
+		<packetview extends="dungeon" region="36">
+			<check offset="0" length="1" value="77" />
+			<check offset="1" length="1" value="59" />
+		</packetview>
+
+		<!-- The Dead Cat's Life -->
+		<packetview extends="dungeon" region="37">
+			<check offset="0" length="1" value="6c" />
+			<check offset="1" length="1" value="6b" />
+		</packetview>
+		
+	</views>
+
+</gamelink>
