@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="ULTIMA III: EXODUS"
+		short="ULTIMA III"
+		titlelo="Ultima III"
+		beta="false"
+		rev="2"
+	/>
+
+    <author><![CDATA[Rikkles]]></author>
+
+	<dsub>
+
+		<!-- Ultima.com (GOG Version and other from the web) -->
+		<detect system="DOS" sys="e9b551c5" prg="faae35b" ph3="0" ph2="e2358d36" ph1="8f54" ph0="0">
+			<!-- MapType MapIdX MapIdY X Y Floor Face -->
+			<peek bytes="2ddc 2de2 2de3 2eec 2eed 2eef 1a25" />
+		</detect>
+		<!-- U3 EGA/VGA Patch http://exodus.voyd.net/projects/ultima3/ -->
+		<detect system="DOS" sys="e9b551c5" prg="faae35b" ph3="0" ph2="22f471c2" ph1="8fa0" ph0="b821">
+			<!-- MapType MapIdX MapIdY X Y Floor Face -->
+			<peek bytes="e26c e272 e273 e37c e37d e37f ceb5" />
+		</detect>
+	</dsub>
+
+	<regions>
+		<!-- Special -->
+		<region id="1" name="Sosaria" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="2" name="Ambrosia" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="3" name="Shrines" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="2" tiley="2" repeating="false" origin_tl="true" />
+		</region>
+		<!-- Castles -->
+		<region id="10" name="Castle British" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="11" name="Castle Exodus" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<!-- Towns -->
+		<region id="20" name="Britain" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="21" name="Dawn" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="22" name="Death Gulch" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="23" name="Devil Guard" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="24" name="Fawn" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="25" name="Grey" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="26" name="Montor East" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="27" name="Montor West" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="28" name="Moon" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="29" name="Yew" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<!-- Dungeons -->
+		<region id="50" name="Dardin's Pit" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="51" name="Dungeon of Fire" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="52" name="Dungeon of Doom" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="53" name="Mines of Morinia" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="54" name="Dungeon of the Snake" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="55" name="Perinian Depths" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="56" name="Dungeon of Time" ground_floor="false" start_floor="B1" auto_create="false" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+
+	</regions>
+
+	<views>
+		<class name="World">
+			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+		</class>
+		<class name="Dungeon">
+			<check offset="0" length="1" value="1" />
+			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+			<floor offset="5" length="1" min="0" max="16" dir="down" adjust="-1" />
+			<face offset="6" length="1" n="00" e="01" s="02" w="03" />
+		</class>
+		<class name="Town">
+			<check offset="0" length="1" value="2" />
+=			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+		</class>
+		<class name="Castle">
+			<check offset="0" length="1" value="3" />
+=			<xpos offset="3" length="1" min="0" max="ff" />
+			<ypos offset="4" length="1" min="0" max="ff" />
+		</class>
+		<!-- Special -->
+		<packetview extends="World" region="1">
+			<check offset="0" length="1" value="0" />
+		</packetview>
+		<packetview extends="World" region="2">
+			<check offset="0" length="1" value="ff" />
+		</packetview>
+		<packetview extends="World" region="3">
+			<check offset="0" length="1" value="4" />
+		</packetview>
+		<!-- Castles -->
+		<packetview extends="Castle" region="10">
+			<check offset="1" length="1" value="2d" />
+			<check offset="2" length="1" value="12" />
+		</packetview>
+		<packetview extends="Castle" region="11">
+			<check offset="1" length="1" value="0a" />
+			<check offset="2" length="1" value="35" />
+		</packetview>
+		<!-- Towns -->
+		<packetview extends="Town" region="20">
+			<check offset="1" length="1" value="2e" />
+			<check offset="2" length="1" value="13" />
+		</packetview>
+		<packetview extends="Town" region="21">
+			<check offset="1" length="1" value="25" />
+			<check offset="2" length="1" value="35" />
+		</packetview>
+		<packetview extends="Town" region="22">
+			<check offset="1" length="1" value="38" />
+			<check offset="2" length="1" value="1f" />
+		</packetview>
+		<packetview extends="Town" region="23">
+			<check offset="1" length="1" value="12" />
+			<check offset="2" length="1" value="1f" />
+		</packetview>
+		<packetview extends="Town" region="24">
+			<check offset="1" length="1" value="1e" />
+			<check offset="2" length="1" value="02" />
+		</packetview>
+		<packetview extends="Town" region="25">
+			<check offset="1" length="1" value="07" />
+			<check offset="2" length="1" value="2c" />
+		</packetview>
+		<packetview extends="Town" region="26">
+			<check offset="1" length="1" value="31" />
+			<check offset="2" length="1" value="3a" />
+		</packetview>
+		<packetview extends="Town" region="27">
+			<check offset="1" length="1" value="2f" />
+			<check offset="2" length="1" value="3a" />
+		</packetview>
+		<packetview extends="Town" region="28">
+			<check offset="1" length="1" value="06" />
+			<check offset="2" length="1" value="0d" />
+		</packetview>
+		<packetview extends="Town" region="29">
+			<check offset="1" length="1" value="22" />
+			<check offset="2" length="1" value="10" />
+		</packetview>
+		<!-- Dungeons -->
+		<packetview extends="Dungeon" region="50">
+			<check offset="1" length="1" value="2e" />
+			<check offset="2" length="1" value="07" />
+		</packetview>
+		<packetview extends="Dungeon" region="51">
+			<check offset="1" length="1" value="31" />
+			<check offset="2" length="1" value="22" />
+		</packetview>
+		<packetview extends="Dungeon" region="52">
+			<check offset="1" length="1" value="13" />
+			<check offset="2" length="1" value="39" />
+		</packetview>
+		<packetview extends="Dungeon" region="53">
+			<check offset="1" length="1" value="09" />
+			<check offset="2" length="1" value="1c" />
+		</packetview>
+		<packetview extends="Dungeon" region="54">
+			<check offset="1" length="1" value="3a" />
+			<check offset="2" length="1" value="2c" />
+		</packetview>
+		<packetview extends="Dungeon" region="55">
+			<check offset="1" length="1" value="38" />
+			<check offset="2" length="1" value="06" />
+		</packetview>
+		<packetview extends="Dungeon" region="56">
+			<check offset="1" length="1" value="3a" />
+			<check offset="2" length="1" value="1e" />
+		</packetview>
+</views>
+
+</gamelink>
