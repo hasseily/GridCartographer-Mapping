@@ -2,15 +2,34 @@
 Program for Grid Cartographer to import a full U3 dungeon from the script Ultima3_dungeons.cs
 @RikRetro on Twitter
 
-00: Empty
-01: Trap
-02: Misty Writing
-04: Ladder up
-08: Ladder down
-10: Chest
-20: Solid Wall
-28: Hidden Door
-30: Door
+From http://nodling.nullneuron.net/ultima/text/ultima3/u3tech_cga.txt :
+
+Dungeon tiles:
+
+0x00 = empty
+0x01 = vision of the Time Lord
+0x02 = fountain (type?)
+0x03 = strange wind (extinguishes your torch)
+0x04 = trap
+0x05 = mark (type depends on dungeon)
+0x06 = gremlins (they steal your food)
+0x07 = (not used)
+0x08 = sign (text depends on dungeon level)
+0x10 = ladder up
+0x20 = ladder down
+0x30 = ladder up/down
+0x40 = chest
+0x50 = chest + ladder up (can't get chest)
+0x60 = chest + ladder down (can't get chest)
+0x70 = chest + ladder up/down (can't get chest)
+0x80 = wall
+0x90 = (not used)
+0xA0 = illusionary wall
+0xB0 = (not used)
+0xC0 = door
+0xD0 = (not used)
+0xE0 = (not used)
+0xF0 = (not used)
 
 */
 function main( args )
@@ -52,47 +71,81 @@ function main( args )
 				break;
 			}
 			GCTile.Select(c,r);
-			var intTile = idTile.ToInt(10);
+			GCConsole.Print(idTile+",");
+			var intTile = idTile.ToInt(16);
 			switch (intTile) {
-				case 20: /* full wall */
+				case 0x01: /* vision of the Time Lord */
 				{
-					GCTile.Set({Terrain = { Type = 39, Color = 15 }});
+					GCTile.Set({Marker = { Type = 24, Color = 83 }});
 					break;
 				}
-				case 1: /* trap */
+				case 0x02: /* fountain (type?) */
+				{
+					GCTile.Set({Marker = { Type = 16, Color = 83 }});
+					break;
+				}
+				case 0x03: /* strange wind (extinguishes your torch) */
+				{
+					GCTile.Set({ FX = { Dark = true } });
+					break;
+				}
+				case 0x04: /* trap */
 				{
 					GCTile.Set({Marker = { Type = 51, Color = 83 }});
 					break;
 				}
-				case 2: /* misty writing */
+				case 0x05: /* mark */
+				{
+					GCTile.Set({Marker = { Type = 127, Color = 83 }});
+					break;
+				}
+				case 0x06: /* gremlins */
+				{
+					GCTile.Set({Marker = { Type = 14, Color = 83 }});
+					break;
+				}
+				case 0x08: /* sign (misty writing) */
 				{
 					GCTile.Set({Marker = { Type = 25, Color = 83 }});
 					break;
 				}
-				case 4: /* up ladder */
+				case 0x10: /* up ladder */
+				case 0x50: /* chest + ladder up (can't get chest) */
 				{
 					GCTile.Set({Marker = { Type = 26, Color = 83 }});
 					break;
 				}
-				case 8: /* down ladder */
+				case 0x20: /* down ladder */
+				case 0x60: /* chest + ladder down (can't get chest) */
 				{
 					GCTile.Set({Marker = { Type = 27, Color = 83 }});
 					break;
 				}
-				case 10: /* chest */
+				case 0x30: /* up+down ladder */
+				case 0x70: /* chest + ladder up/down (can't get chest) */
+				{
+					GCTile.Set({Marker = { Type = 44, Color = 83 }});
+					break;
+				}
+				case 0x40: /* chest */
 				{
 					GCTile.Set({Marker = { Type = 46, Color = 83 }});
 					break;
 				}
-				case 30: /* door */
+				case 0x80: /* full wall */
 				{
-					GCTile.Set({Marker = { Type = 134, Color = 83 }});
+					GCTile.Set({Terrain = { Type = 39, Color = 15 }});
 					break;
 				}
-				case 28: /* hidden door */
+				case 0xa0: /* hidden door */
 				{
 					GCTile.Set({Terrain = { Type = 39, Color = 9 }});
 					//GCTile.Set({Marker = { Type = 134, Color = 83 }});
+					break;
+				}
+				case 0xc0: /* door */
+				{
+					GCTile.Set({Marker = { Type = 134, Color = 83 }});
 					break;
 				}
 				case 0: /* empty */
@@ -123,7 +176,7 @@ function main( args )
 					{
 						r = r+1;
 						c = 0;
-						GCConsole.Print(".");
+						GCConsole.Print("\n");
 						break;
 					};
 			}
