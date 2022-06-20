@@ -26,7 +26,7 @@ function main( args )
 			{
 				ff = "0"+i.ToString();
 			}
-			var fName = "D:\\Downloads\\U2\\" + ff + " - " + GCRegion.Name() + " - " + GCFloor.Name() + ".png";
+			var fName = @"C:\Users\hasse_7x\Downloads\U3\" + ff + " - " + GCRegion.Name() + " - " + GCFloor.FriendlyName() + ".png";
 			var res = GCExport.Image(fName);
 			if (res != 0)
 			{
