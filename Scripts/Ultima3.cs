@@ -1,6 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
 
@@ -45,7 +44,12 @@ Ships
 Ships are stored as 0x2C == ship_tile*4. The tile under the ship can only be 0x0.
 
 Chests
-The map tile under the chest is encoded in the lowest 2 bits of the tile: 0x24 == chest_tile*4 + 0 --> chest on bricks (tile 0x8) 0x25 == chest_tile*4 + 1 --> chest on grass (tile 0x1) 0x26 == chest_tile*4 + 2 --> chest on forest (tile 0x2) 0x27 == chest_tile*4 + 3 --> chest on deep forest (tile 0x3) Monsters can't walk onto chests, so there can only be one chest per map square.
+The map tile under the chest is encoded in the lowest 2 bits of the tile: 
+	0x24 == chest_tile*4 + 0 --> chest on bricks (tile 0x8) 
+	0x25 == chest_tile*4 + 1 --> chest on grass (tile 0x1) 
+	0x26 == chest_tile*4 + 2 --> chest on forest (tile 0x2) 
+	0x27 == chest_tile*4 + 3 --> chest on deep forest (tile 0x3) 
+Monsters can't walk onto chests, so there can only be one chest per map square.
 
    */
 
@@ -54,7 +58,7 @@ class Script
     [STAThread]
     static public void Main(string[] args)
     {
-		var pathPrefix = @"C:\Users\hasse\OneDrive\Desktop\U2 Work\Ultima 3\";
+		var pathPrefix = @"C:\Users\hasse_7x\OneDrive\Desktop\U2 Work\Ultima 3\";
 
 		// .ULT maps (not dungeons)
 		{
@@ -63,8 +67,8 @@ class Script
 			foreach(var imgFile in imgFiles)
 			{
 				StreamWriter sw = new StreamWriter(pathPrefix + $"U3_{imgFile}.csv");
-				byte[] readText = File.ReadAllBytes(@"D:\GOG Games\Ultima 3\"+ $"{imgFile}.ULT");
-
+				byte[] readText = File.ReadAllBytes(@"C:\Program Files (x86)\GOG Galaxy\Games\Ultima 3\"+ $"{imgFile}.ULT");
+				/*
 				for (var p=0; p < 64*64; p++)	// the first 64x64 bytes are the static map
 				{
 					int s = (int)readText[p];
@@ -104,9 +108,9 @@ class Script
 				{
 					var cx = (int)readText[0x11c0 + m];		// x coord of monster m
 					var cy = (int)readText[0x11e0 + m];		// y coord of monster m
-					readText[cx + (cy*64)] = (byte)((int)readText[0x11A0] / 4);
+					readText[cx + (cy*64)] = (byte)((int)readText[0x11A0]);
 				}
-				
+				*/
 				
 				// Now print out the cleaned map
 				int i = 0;
@@ -138,7 +142,7 @@ class Script
 			foreach(var imgFile in imgFiles)
 			{
 				StreamWriter sw = new StreamWriter(pathPrefix + $"U3_{imgFile}.csv");
-				byte[] readText = File.ReadAllBytes(@"D:\GOG Games\Ultima 3\"+ $"{imgFile}.IMG");
+				byte[] readText = File.ReadAllBytes(@"C:\Program Files (x86)\GOG Galaxy\Games\Ultima 3\"+ $"{imgFile}.IMG");
 
 				int i = 0;
 				for(var p=0; p < 11*11; p++)
