@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="ULTIMA 2"
+		short="ULTIMA 2"
+		titlelo="Ultima II: Revenge of the Enchantress"
+		beta="false"
+		rev="5"
+	/>
+
+	<author><![CDATA[Rikkles]]></author>
+
+	<dsub>
+
+    <detect system="DOSBox" sys="e9b551c5" prg="f2e2770" ph3="0" ph2="66abf0ba" ph1="8fe0" ph0="ea36">
+			<!-- planet era x y mapId dungeonFloor face1 face2 -->
+			<peek bytes="cb0d cae9 caa0 caa1 caea cac5 caa2 caa3" />
+		</detect>
+
+	</dsub>
+
+	<regions>
+		<region id="1" name="Legends" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="2" name="Pangea" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="3" name="1423 AD" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="4" name="1990 AD" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="5" name="2112 AD" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="6" name="Mercury" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="7" name="Venus" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="8" name="Mars" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="9" name="Jupiter" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="10" name="Saturn" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="11" name="Uranus" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="12" name="Neptune" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="13" name="Pluto" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		<region id="14" name="Planet X" ground_floor="true" start_floor="G" auto_create="false" >
+			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
+		</region>
+		
+<!-- Dungeons and towers -->
+
+		<region id="15" name="Dungeon Greenland" ground_floor="false" start_floor="B1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="16" name="Tower 1423 AD" ground_floor="false" start_floor="F1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="17" name="Tower 1990 AD" ground_floor="false" start_floor="F1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="18" name="Dungeon Mercury" ground_floor="false" start_floor="B1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="19" name="Tower Jupiter" ground_floor="false" start_floor="F1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="20" name="Dungeon Jupiter" ground_floor="false" start_floor="B1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+		<region id="21" name="Dungeon Pluto" ground_floor="false" start_floor="B1" auto_create="true" >
+			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+		</region>
+</regions>
+
+<views>
+	<!-- Standard is overworld and towns -->
+	<!-- We use the map id to map to "floors" so that the region has all of them -->
+	<!-- Standard regions do not include towers and dungeons, which are in unique regions -->
+	<class name="Standard">
+		<xpos offset="2" length="1" min="0" max="40" />
+		<ypos offset="3" length="1" min="0" max="40" />
+		<floor offset="4" length="1" min="0" max="16" dir="up" />
+		<check offset="4" length="1" op="LTE" value="3" />
+	</class>
+	<!-- Towers and dungeons have each a unique region and use real floors -->
+	<class name="Tower">
+		<xpos offset="2" length="1" min="0" max="40" />
+		<ypos offset="3" length="1" min="0" max="40" />
+		<floor offset="5" length="1" min="0" max="16" dir="up" adjust="1" />
+		<face offset="6" length="2" w="00ffh" s="0100h" e="0001h" n="ff00h" />
+		<check offset="4" length="1" value="4" />
+	</class>
+	<class name="Dungeon">
+		<xpos offset="2" length="1" min="0" max="40" />
+		<ypos offset="3" length="1" min="0" max="40" />
+		<floor offset="5" length="1" min="0" max="16" dir="down" adjust="-1" />
+		<face offset="6" length="2" w="00ffh" s="0100h" e="0001h" n="ff00h" />
+		<check offset="4" length="1" value="5" />
+	</class>
+	
+	<packetview extends="Standard" region="1" tag="Legends">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="00" />
+	</packetview>
+	<packetview extends="Standard" region="2" tag="Pangea">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="01" />
+	</packetview>
+	<packetview extends="Standard" region="3" tag="1423 AD">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="02" />
+	</packetview>
+	<packetview extends="Standard" region="4" tag="1990 AD">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="03" />
+	</packetview>
+	<packetview extends="Standard" region="5" tag="2112 AD">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="04" />
+	</packetview>
+	<packetview extends="Standard" region="6" tag="Mercury">
+		<check offset="0" length="1" value="01" />
+		<check offset="1" length="1" value="01" />
+	</packetview>
+	<packetview extends="Standard" region="7" tag="Venus">
+		<check offset="0" length="1" value="02" />
+		<check offset="1" length="1" value="02" />
+	</packetview>
+	<packetview extends="Standard" region="8" tag="Mars">
+		<check offset="0" length="1" value="03" />
+		<check offset="1" length="1" value="03" />
+	</packetview>
+	<packetview extends="Standard" region="9" tag="Jupiter">
+		<check offset="0" length="1" value="04" />
+		<check offset="1" length="1" value="04" />
+	</packetview>
+	<packetview extends="Standard" region="10" tag="Saturn">
+		<check offset="0" length="1" value="05" />
+		<check offset="1" length="1" value="05" />
+	</packetview>
+	<packetview extends="Standard" region="11" tag="Uranus">
+		<check offset="0" length="1" value="06" />
+		<check offset="1" length="1" value="06" />
+	</packetview>
+	<packetview extends="Standard" region="12" tag="Neptune">
+		<check offset="0" length="1" value="07" />
+		<check offset="1" length="1" value="07" />
+	</packetview>
+	<packetview extends="Standard" region="13" tag="Pluto">
+		<check offset="0" length="1" value="08" />
+		<check offset="1" length="1" value="08" />
+	</packetview>
+	<packetview extends="Standard" region="14" tag="Planet X">
+		<check offset="0" length="1" value="09" />
+		<check offset="1" length="1" value="09" />
+	</packetview>
+	
+	<!-- The Greenland dungeon is unique in that it spans multiple eras on Earth -->
+	<packetview extends="Dungeon" region="15" tag="Dungeon Greenland">
+		<check offset="0" length="1" value="00" />
+	</packetview>
+	<packetview extends="Tower" region="16" tag="Tower 1423 AD">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="02" />
+	</packetview>
+	<packetview extends="Tower" region="17" tag="Tower 1990 AD">
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="03" />
+	</packetview>
+	<packetview extends="Dungeon" region="18" tag="Dungeon Mercury">
+		<check offset="0" length="1" value="01" />
+	</packetview>
+	<packetview extends="Tower" region="19" tag="Tower Jupiter">
+		<check offset="0" length="1" value="04" />
+	</packetview>
+	<packetview extends="Dungeon" region="20" tag="Dungeon Jupiter">
+		<check offset="0" length="1" value="04" />
+	</packetview>
+	<packetview extends="Dungeon" region="21" tag="Dungeon Pluto">
+		<check offset="0" length="1" value="08" />
+	</packetview>
+</views>
+
+</gamelink>
