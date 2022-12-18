@@ -1,6 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
 
@@ -15,7 +14,7 @@ class Script
     static public void Main(string[] args)
     {
 		StreamWriter sw = new StreamWriter(@"C:\Users\hasse\OneDrive\Desktop\U2 Work\TEST_U2.csv");
-		byte[] readText = File.ReadAllBytes(@"D:\GOG Games\Ultima 2\MAPX10");
+		byte[] readText = File.ReadAllBytes(@"D:\Downloads\Galactic_Maps_U2\map842");
 		int i = 0;
         foreach(byte s in readText)
         {
