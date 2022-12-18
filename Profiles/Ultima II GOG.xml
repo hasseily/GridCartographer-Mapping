@@ -6,7 +6,7 @@
 		short="ULTIMA 2"
 		titlelo="Ultima II: Revenge of the Enchantress"
 		beta="false"
-		rev="5"
+		rev="6"
 	/>
 
 	<author><![CDATA[Rikkles]]></author>
@@ -27,7 +27,7 @@
 		<region id="2" name="Pangea" ground_floor="true" start_floor="G" auto_create="true" >
 			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
 		</region>
-		<region id="3" name="1423 AD" ground_floor="true" start_floor="G" auto_create="true" >
+		<region id="3" name="1423 BC" ground_floor="true" start_floor="G" auto_create="true" >
 			<grid width="16" height="16" tilex="4" tiley="4" repeating="false" origin_tl="true" />
 		</region>
 		<region id="4" name="1990 AD" ground_floor="true" start_floor="G" auto_create="true" >
