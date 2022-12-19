@@ -6,14 +6,14 @@
 		short="ULTIMA 2"
 		titlelo="Ultima II: Revenge of the Enchantress"
 		beta="false"
-		rev="6"
+		rev="7"
 	/>
 
 	<author><![CDATA[Rikkles]]></author>
 
 	<dsub>
 
-    <detect system="DOSBox" sys="e9b551c5" prg="f2e2770" ph3="0" ph2="66abf0ba" ph1="8fe0" ph0="ea36">
+    <detect system="DOS" sys="e9b551c5" prg="f2e2770" ph3="0" ph2="66abf0ba" ph1="8fe0" ph0="ea36">
 			<!-- planet era x y mapId dungeonFloor face1 face2 -->
 			<peek bytes="cb0d cae9 caa0 caa1 caea cac5 caa2 caa3" />
 		</detect>
@@ -69,7 +69,7 @@
 		<region id="15" name="Dungeon Greenland" ground_floor="false" start_floor="B1" auto_create="true" >
 			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
 		</region>
-		<region id="16" name="Tower 1423 AD" ground_floor="false" start_floor="F1" auto_create="true" >
+		<region id="16" name="Tower 1423 BC" ground_floor="false" start_floor="F1" auto_create="true" >
 			<grid width="16" height="16" tilex="1" tiley="1" repeating="false" origin_tl="true" />
 		</region>
 		<region id="17" name="Tower 1990 AD" ground_floor="false" start_floor="F1" auto_create="true" >
@@ -115,6 +115,14 @@
 		<check offset="4" length="1" value="5" />
 	</class>
 	
+	<packetview extends="Standard" region="1" tag="Legends Castle">
+	<!-- 	All castles are at floor 3, but in Legends there are no villages or
+			towns to fill floors 1 and 2 -->
+		<check offset="0" length="1" value="00" />
+		<check offset="1" length="1" value="00" />
+		<check offset="4" length="1" value="3" />
+		<const_floor>F1</const_floor>
+	</packetview>
 	<packetview extends="Standard" region="1" tag="Legends">
 		<check offset="0" length="1" value="00" />
 		<check offset="1" length="1" value="00" />
@@ -123,7 +131,7 @@
 		<check offset="0" length="1" value="00" />
 		<check offset="1" length="1" value="01" />
 	</packetview>
-	<packetview extends="Standard" region="3" tag="1423 AD">
+	<packetview extends="Standard" region="3" tag="1423 BC">
 		<check offset="0" length="1" value="00" />
 		<check offset="1" length="1" value="02" />
 	</packetview>
@@ -167,6 +175,22 @@
 		<check offset="0" length="1" value="08" />
 		<check offset="1" length="1" value="08" />
 	</packetview>
+	<packetview extends="Standard" region="14" tag="Planet X Town">
+	<!-- 	All towns are at floor 2, but in Planet X there is no village
+			to fill floor 1 -->
+		<check offset="0" length="1" value="09" />
+		<check offset="1" length="1" value="09" />
+		<check offset="4" length="1" value="2" />
+		<const_floor>F1</const_floor>
+	</packetview>
+	<packetview extends="Standard" region="14" tag="Planet X Castle">
+	<!-- 	All castles are at floor 3, but in Planet X there is no village
+			to fill floor 1 -->
+		<check offset="0" length="1" value="09" />
+		<check offset="1" length="1" value="09" />
+		<check offset="4" length="1" value="3" />
+		<const_floor>F2</const_floor>
+	</packetview>
 	<packetview extends="Standard" region="14" tag="Planet X">
 		<check offset="0" length="1" value="09" />
 		<check offset="1" length="1" value="09" />
@@ -176,7 +200,7 @@
 	<packetview extends="Dungeon" region="15" tag="Dungeon Greenland">
 		<check offset="0" length="1" value="00" />
 	</packetview>
-	<packetview extends="Tower" region="16" tag="Tower 1423 AD">
+	<packetview extends="Tower" region="16" tag="Tower 1423 BC">
 		<check offset="0" length="1" value="00" />
 		<check offset="1" length="1" value="02" />
 	</packetview>
