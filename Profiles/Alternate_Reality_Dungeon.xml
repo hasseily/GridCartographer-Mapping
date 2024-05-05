@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gamelink>
+
+	<card
+		title="ALTERNATE REALITY: THE DUNGEON"
+		short="ALTERNATE REALITY 2"
+		titlelo="Alternate Reality: The Dungeon"
+		beta="false"
+		rev="1"
+	/>
+
+    <author><![CDATA[Rikkles]]></author>
+
+	<dsub>
+		<!-- face  xHi xLo yHi yLo level -->
+		<!-- the lo byte for x and y is the subdivision of a tile, maxes at 0x23 -->
+		
+		<!-- ARD Apple 2 .woz from woz-a-day on Internet Archive -->
+		<detect system="APPLE II" sys="40a3f909" prg="8fde1644" ph3="88178e6d" ph2="0" ph1="0" ph0="0">
+			<peek bytes="0812 0813 0816 0814 0817 081d" />
+		</detect>
+		
+		<libretro>
+			<!-- abandonware C64 version -->
+			<detect system="C64" content-hash="afea7b301f9d164fba7b0e8f42f64d6af3225ddd86704a086dbd6fe7bb4d1cde">
+				<peek bytes="0812 0813 0816 0814 0817 081d" />
+			</detect>
+		</libretro>
+
+	</dsub>
+
+	<regions>
+
+		<region id="1" name="Level 1" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="64" height="64" origin_tl="true" />
+		</region>
+		<region id="2" name="Level 2" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="32" height="32" origin_tl="true" />
+		</region>
+		<region id="3" name="Level 3" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="16" height="16" origin_tl="true" />
+		</region>
+		<region id="4" name="Level 4" ground_floor="true" start_floor="G" auto_create="true" >
+			<grid width="8" height="8" origin_tl="true" />
+		</region>
+	</regions>
+
+	<views>
+		<class name="Standard">
+			<face offset="0" length="1" n="0" e="1" s="2" w="3" />
+			<xpos offset="1" length="1" min="0" max="ff" />
+			<ypos offset="3" length="1" min="0" max="ff" />
+		</class>
+		
+		<packetview extends="standard" region="1">
+			<check offset="5" length="1" value="1" />
+			<const_floor>G</const_floor>
+		</packetview>
+		<packetview extends="standard" region="2">
+			<check offset="5" length="1" value="2" />
+			<const_floor>G</const_floor>
+		</packetview>
+		<packetview extends="standard" region="3">
+			<check offset="5" length="1" value="3" />
+			<const_floor>G</const_floor>
+		</packetview>
+		<packetview extends="standard" region="4">
+			<check offset="5" length="1" value="4" />
+			<const_floor>G</const_floor>
+		</packetview>
+	</views>
+
+</gamelink>
