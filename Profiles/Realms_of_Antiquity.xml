@@ -6,7 +6,7 @@
 		short="Realms of Antiquity"
 		titlelo="Realms of Antiquity: The Shattered Crown"
 		beta="false"
-		rev="4"
+		rev="5"
 	/>
 
   <author><![CDATA[Rikkles]]></author>
@@ -16,7 +16,7 @@
 
     <!-- roacart.bin -->
     <detect system="Ti-99" sys="637a4c3e" prg="503359be" ph3="503359be" ph2="0" ph1="0" ph0="0">
-      <!-- 0:WorldDisk(0-3) 1:mapID 2:xpos 3:ypos -->
+      <!-- 0:WorldDisk(0-4) 1:mapID 2:xpos 3:ypos -->
       <peek bytes="1a004 1a005 1a009 1a007" />
     </detect>
 
@@ -105,6 +105,10 @@
     <region id="35" name="Overlord's Realm" ground_floor="true" start_floor="G" auto_create="true" >
       <grid width="64" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
     </region>
+	<!-- World_4 -->
+	<region id="36" name="Goldur's Maw" ground_floor="true" start_floor="G" auto_create="true" >
+      <grid width="95" height="64" tilex="1" tiley="1" repeating="false" origin_tl="true" />
+    </region>
   </regions>
 
   <views>
@@ -128,7 +132,12 @@
       <xpos offset="2" length="1" min="0" max="ff" />
       <ypos offset="3" length="1" min="0" max="ff" />
     </class>
-
+    <class name="World_4">
+      <check offset="0" length="1" value="4" />
+      <xpos offset="2" length="1" min="0" max="ff" />
+      <ypos offset="3" length="1" min="0" max="ff" />
+    </class>
+	
     <!-- WORLD_0 -->
     <!-- Lost Vale -->
     <packetview extends="World_0" region="255">
@@ -1359,6 +1368,27 @@
       <const_floor>F13</const_floor>
     </packetview>
 
+    <!-- WORLD_4 -->
+    <!-- Goldur's Maw (Entrance) -->
+    <packetview extends="World_4" region="36">
+      <check offset="1" length="1" value="0" />
+      <const_floor>G</const_floor>
+    </packetview>
+	<!-- Goldur's Maw (Fire) -->
+	<packetview extends="World_4" region="36">
+      <check offset="1" length="1" value="1" />
+      <const_floor>F1</const_floor>
+    </packetview>
+	<!-- Goldur's Maw (Ice) -->
+	<packetview extends="World_4" region="36">
+      <check offset="1" length="1" value="3" />
+      <const_floor>F2</const_floor>
+    </packetview>
+	<!-- Goldur's Maw (Poison) -->
+	<packetview extends="World_4" region="36">
+      <check offset="1" length="1" value="2" />
+      <const_floor>F3</const_floor>
+    </packetview>
   </views>
 
 </gamelink>
